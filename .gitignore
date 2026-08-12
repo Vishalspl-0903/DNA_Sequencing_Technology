@@ -1,0 +1,7 @@
+# Only the dataset is excluded — everything else in this repo is pushed.
+# See README.md "Dataset setup" for how to obtain Dataset/.
+Dataset/
+
+# Python bytecode — not source, always regenerated, harmless to exclude
+__pycache__/
+*.pyc
