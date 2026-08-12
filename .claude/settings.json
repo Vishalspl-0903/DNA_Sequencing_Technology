@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python \"d:\\\\DNA-Sequencing\\\\work\\\\scripts\\\\06_baselines.py\" 2>&1)",
+      "PowerShell(python \"d:\\\\DNA-Sequencing\\\\work\\\\scripts\\\\09_report.py\" 2>&1)"
+    ]
+  }
+}
