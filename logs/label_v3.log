@@ -1,0 +1,402 @@
+﻿labelling sim01_lig_d15
+    {'recovered': 2, 'gray_50_95': 1} segments=4
+labelling sim01_lig_d30
+    {'recovered': 3} segments=4
+labelling sim01_rap_d15
+    {'recovered': 3} segments=4
+labelling sim01_rap_d30
+    {'recovered': 3} segments=4
+labelling sim02_lig_d15
+    {'recovered': 4} segments=5
+labelling sim02_lig_d30
+    {'recovered': 4} segments=5
+labelling sim02_rap_d15
+    {'recovered': 4} segments=5
+labelling sim02_rap_d30
+    {'recovered': 4} segments=5
+labelling sim03_lig_d15
+    {'absent': 1, 'recovered': 2, 'gray_50_95': 1} segments=4
+labelling sim03_lig_d30
+    {'absent': 1, 'recovered': 2, 'fragmented': 1} segments=5
+labelling sim03_rap_d15
+    {'absent': 1, 'recovered': 2, 'gray_50_95': 1} segments=5
+labelling sim03_rap_d30
+    {'absent': 1, 'recovered': 2, 'gray_50_95': 1} segments=5
+labelling sim04_lig_d15
+    {'absent': 1, 'recovered': 2} segments=4
+labelling sim04_lig_d30
+    {'recovered': 3} segments=5
+labelling sim04_rap_d15
+    {'recovered': 3} segments=4
+labelling sim04_rap_d30
+    {'recovered': 3} segments=5
+labelling sim05_lig_d15
+    {'absent': 1, 'recovered': 1} segments=5
+labelling sim05_lig_d30
+    {'recovered': 1, 'gray_50_95': 1} segments=5
+labelling sim05_rap_d15
+    {'recovered': 2} segments=5
+labelling sim05_rap_d30
+    {'recovered': 2} segments=3
+labelling sim06_lig_d15
+    {'recovered': 2, 'absent': 1, 'absorbed': 1} segments=3
+labelling sim06_lig_d30
+    {'recovered': 2, 'absent': 1, 'absorbed': 1} segments=3
+labelling sim06_rap_d15
+    {'recovered': 3, 'absorbed': 1} segments=4
+labelling sim06_rap_d30
+    {'recovered': 3, 'absorbed': 1} segments=4
+labelling sim07_lig_d15
+    {'absent': 1, 'recovered': 3} segments=4
+labelling sim07_lig_d30
+    {'absent': 2, 'recovered': 2} segments=3
+labelling sim07_rap_d15
+    {'absent': 1, 'recovered': 2, 'absorbed': 1} segments=4
+labelling sim07_rap_d30
+    {'absent': 1, 'recovered': 2, 'absorbed': 1} segments=3
+labelling sim08_lig_d15
+    {'absent': 1, 'gray_50_95': 1, 'recovered': 1} segments=5
+labelling sim08_lig_d30
+    {'absent': 1, 'recovered': 2} segments=3
+labelling sim08_rap_d15
+    {'recovered': 3} segments=6
+labelling sim08_rap_d30
+    {'recovered': 2, 'absorbed': 1} segments=3
+labelling sim09_lig_d15
+    {'recovered': 3} segments=6
+labelling sim09_lig_d30
+    {'recovered': 3} segments=4
+labelling sim09_rap_d15
+    {'recovered': 3} segments=5
+labelling sim09_rap_d30
+    {'recovered': 3} segments=4
+labelling sim10_lig_d15
+    {'absent': 2, 'recovered': 2} segments=3
+labelling sim10_lig_d30
+    {'absent': 2, 'recovered': 2} segments=3
+labelling sim10_rap_d15
+    {'recovered': 4} segments=5
+labelling sim10_rap_d30
+    {'recovered': 4} segments=5
+labelling sim11_lig_d15
+    {'absent': 2, 'recovered': 1, 'fragmented': 1} segments=4
+labelling sim11_lig_d30
+    {'absent': 1, 'recovered': 2, 'fragmented': 1} segments=5
+labelling sim11_rap_d15
+    {'gray_50_95': 2, 'recovered': 2} segments=5
+labelling sim11_rap_d30
+    {'gray_50_95': 1, 'recovered': 2, 'fragmented': 1} segments=5
+labelling sim12_lig_d15
+    {'absent': 2, 'recovered': 1} segments=2
+labelling sim12_lig_d30
+    {'recovered': 3} segments=4
+labelling sim12_rap_d15
+    {'recovered': 3} segments=4
+labelling sim12_rap_d30
+    {'recovered': 3} segments=4
+labelling sim13_lig_d15
+    {'recovered': 2, 'gray_50_95': 1} segments=3
+labelling sim13_lig_d30
+    {'recovered': 2, 'gray_50_95': 1} segments=5
+labelling sim13_rap_d15
+    {'recovered': 3} segments=5
+labelling sim13_rap_d30
+    {'recovered': 2, 'gray_50_95': 1} segments=5
+labelling sim14_lig_d15
+    {'recovered': 3} segments=5
+labelling sim14_lig_d30
+    {'recovered': 3} segments=5
+labelling sim14_rap_d15
+    {'recovered': 3} segments=5
+labelling sim14_rap_d30
+    {'recovered': 3} segments=9
+labelling sim15_lig_d15
+    {'absent': 3, 'absorbed': 1} segments=2
+labelling sim15_lig_d30
+    {'absent': 2, 'gray_50_95': 1, 'recovered': 1} segments=4
+labelling sim15_rap_d15
+    {'absent': 2, 'recovered': 1, 'absorbed': 1} segments=2
+labelling sim15_rap_d30
+    {'absent': 1, 'recovered': 2, 'absorbed': 1} segments=5
+labelling sim16_lig_d15
+    {'recovered': 2, 'absent': 1, 'absorbed': 1} segments=4
+labelling sim16_lig_d30
+    {'fragmented': 1, 'gray_50_95': 1, 'absorbed': 1, 'recovered': 1} segments=5
+labelling sim16_rap_d15
+    {'fragmented': 1, 'gray_50_95': 1, 'absorbed': 1, 'recovered': 1} segments=5
+labelling sim16_rap_d30
+    {'fragmented': 1, 'gray_50_95': 1, 'absorbed': 1, 'recovered': 1} segments=5
+labelling sim17_lig_d15
+    {'recovered': 2, 'absent': 1} segments=4
+labelling sim17_lig_d30
+    {'recovered': 3} segments=6
+labelling sim17_rap_d15
+    {'recovered': 2, 'absent': 1} segments=3
+labelling sim17_rap_d30
+    {'recovered': 3} segments=8
+labelling sim18_lig_d15
+    {'absent': 1, 'absorbed': 1} segments=1
+labelling sim18_lig_d30
+    {'absent': 1, 'absorbed': 1} segments=2
+labelling sim18_rap_d15
+    {'recovered': 1, 'absorbed': 1} segments=2
+labelling sim18_rap_d30
+    {'gray_50_95': 1, 'absorbed': 1} segments=2
+labelling sim19_lig_d15
+    {'absent': 1, 'recovered': 3} segments=6
+labelling sim19_lig_d30
+    {'absent': 1, 'recovered': 3} segments=5
+labelling sim19_rap_d15
+    {'absent': 1, 'recovered': 2, 'absorbed': 1} segments=9
+labelling sim19_rap_d30
+    {'absent': 1, 'recovered': 3} segments=4
+labelling sim20_lig_d15
+    {'absent': 2, 'recovered': 2} segments=3
+labelling sim20_lig_d30
+    {'recovered': 3, 'absorbed': 1} segments=4
+labelling sim20_rap_d15
+    {'recovered': 2, 'absorbed': 2} segments=4
+labelling sim20_rap_d30
+    {'recovered': 4} segments=5
+labelling sim21_lig_d15
+    {'absent': 1, 'recovered': 1, 'absorbed': 1} segments=4
+labelling sim21_lig_d30
+    {'recovered': 2, 'absorbed': 1} segments=4
+labelling sim21_rap_d15
+    {'recovered': 2, 'absorbed': 1} segments=4
+labelling sim21_rap_d30
+    {'recovered': 2, 'absorbed': 1} segments=5
+labelling sim22_lig_d15
+    {'recovered': 3} segments=4
+labelling sim22_lig_d30
+    {'recovered': 3} segments=4
+labelling sim22_rap_d15
+    {'recovered': 3} segments=4
+labelling sim22_rap_d30
+    {'recovered': 3} segments=4
+labelling sim23_lig_d15
+    {'absent': 1, 'recovered': 2, 'gray_50_95': 1} segments=3
+labelling sim23_lig_d30
+    {'absent': 1, 'gray_50_95': 3} segments=2
+labelling sim23_rap_d15
+    {'absent': 1, 'recovered': 2, 'gray_50_95': 1} segments=4
+labelling sim23_rap_d30
+    {'absent': 1, 'recovered': 2, 'gray_50_95': 1} segments=3
+labelling sim24_lig_d15
+    {'recovered': 3} segments=5
+labelling sim24_lig_d30
+    {'gray_50_95': 1, 'fragmented': 1, 'recovered': 1} segments=5
+labelling sim24_rap_d15
+    {'gray_50_95': 1, 'fragmented': 1, 'absorbed': 1} segments=5
+labelling sim24_rap_d30
+    {'gray_50_95': 1, 'fragmented': 1, 'recovered': 1} segments=6
+labelling sim25_lig_d15
+    {'recovered': 3, 'absent': 1} segments=6
+labelling sim25_lig_d30
+    {'recovered': 4} segments=5
+labelling sim25_rap_d15
+    {'absorbed': 1, 'recovered': 3} segments=8
+labelling sim25_rap_d30
+    {'recovered': 4} segments=5
+labelling sim26_lig_d15
+    {'recovered': 2, 'absent': 1} segments=4
+labelling sim26_lig_d30
+    {'absent': 1, 'recovered': 2} segments=3
+labelling sim26_rap_d15
+    {'recovered': 2, 'absorbed': 1} segments=3
+labelling sim26_rap_d30
+    {'recovered': 3} segments=4
+labelling sim27_lig_d15
+    {'absent': 1, 'recovered': 2, 'absorbed': 1} segments=6
+labelling sim27_lig_d30
+    {'absent': 1, 'recovered': 2, 'absorbed': 1} segments=3
+labelling sim27_rap_d15
+    {'recovered': 3, 'absorbed': 1} segments=5
+labelling sim27_rap_d30
+    {'recovered': 3, 'absorbed': 1} segments=4
+labelling sim28_lig_d15
+    {'absent': 3, 'recovered': 1} segments=2
+labelling sim28_lig_d30
+    {'absent': 3, 'recovered': 1} segments=3
+labelling sim28_rap_d15
+    {'absent': 1, 'recovered': 2, 'gray_50_95': 1} segments=4
+labelling sim28_rap_d30
+    {'absent': 1, 'recovered': 3} segments=4
+labelling sim29_lig_d15
+    {'gray_50_95': 1, 'recovered': 2} segments=3
+labelling sim29_lig_d30
+    {'gray_50_95': 1, 'recovered': 2} segments=3
+labelling sim29_rap_d15
+    {'gray_50_95': 1, 'recovered': 2} segments=6
+labelling sim29_rap_d30
+    {'recovered': 3} segments=3
+labelling sim30_lig_d15
+    {'recovered': 2} segments=3
+labelling sim30_lig_d30
+    {'recovered': 2} segments=3
+labelling sim30_rap_d15
+    {'recovered': 2} segments=3
+labelling sim30_rap_d30
+    {'recovered': 2} segments=3
+labelling sim31_lig_d15
+    {'gray_50_95': 2, 'recovered': 2} segments=4
+labelling sim31_lig_d30
+    {'gray_50_95': 2, 'recovered': 2} segments=4
+labelling sim31_rap_d15
+    {'recovered': 4} segments=5
+labelling sim31_rap_d30
+    {'recovered': 4} segments=5
+labelling sim32_lig_d15
+    {'absent': 1, 'recovered': 2, 'gray_50_95': 1} segments=3
+labelling sim32_lig_d30
+    {'absent': 1, 'fragmented': 1, 'gray_50_95': 1, 'recovered': 1} segments=4
+labelling sim32_rap_d15
+    {'absent': 1, 'recovered': 1, 'gray_50_95': 1, 'absorbed': 1} segments=2
+labelling sim32_rap_d30
+    {'absent': 1, 'recovered': 2, 'gray_50_95': 1} segments=4
+labelling sim33_lig_d15
+    {'gray_50_95': 2, 'fragmented': 1} segments=3
+labelling sim33_lig_d30
+    {'absent': 2, 'fragmented': 1} segments=3
+labelling sim33_rap_d15
+    {'recovered': 2, 'fragmented': 1} segments=6
+labelling sim33_rap_d30
+    {'recovered': 2, 'fragmented': 1} segments=4
+labelling sim34_lig_d15
+    {'recovered': 2, 'gray_50_95': 1} segments=12
+labelling sim34_lig_d30
+    {'recovered': 2, 'absorbed': 1} segments=5
+labelling sim34_rap_d15
+    {'recovered': 2, 'gray_50_95': 1} segments=12
+labelling sim34_rap_d30
+    {'recovered': 2, 'absorbed': 1} segments=6
+labelling sim35_lig_d15
+    {'recovered': 4} segments=6
+labelling sim35_lig_d30
+    {'recovered': 4} segments=6
+labelling sim35_rap_d15
+    {'recovered': 4} segments=6
+labelling sim35_rap_d30
+    {'absorbed': 1, 'recovered': 3} segments=6
+labelling sim36_lig_d15
+    {'absent': 2, 'recovered': 2} segments=3
+labelling sim36_lig_d30
+    {'absent': 2, 'recovered': 2} segments=3
+labelling sim36_rap_d15
+    {'absent': 2, 'recovered': 2} segments=3
+labelling sim36_rap_d30
+    {'absent': 1, 'recovered': 3} segments=4
+labelling sim37_lig_d15
+    {'recovered': 2, 'absent': 1} segments=4
+labelling sim37_lig_d30
+    {'recovered': 2, 'absent': 1} segments=4
+labelling sim37_rap_d15
+    {'recovered': 3} segments=8
+labelling sim37_rap_d30
+    {'recovered': 3} segments=4
+labelling sim38_lig_d15
+    {'recovered': 3} segments=4
+labelling sim38_lig_d30
+    {'recovered': 3} segments=4
+labelling sim38_rap_d15
+    {'recovered': 3} segments=4
+labelling sim38_rap_d30
+    {'recovered': 3} segments=4
+labelling sim39_lig_d15
+    {'recovered': 3} segments=6
+labelling sim39_lig_d30
+    {'recovered': 2, 'absorbed': 1} segments=5
+labelling sim39_rap_d15
+    {'recovered': 2, 'absorbed': 1} segments=3
+labelling sim39_rap_d30
+    {'recovered': 2, 'absorbed': 1} segments=3
+labelling sim40_lig_d15
+    {'absent': 2, 'recovered': 2} segments=3
+labelling sim40_lig_d30
+    {'absent': 1, 'recovered': 3} segments=4
+labelling sim40_rap_d15
+    {'absent': 1, 'recovered': 3} segments=4
+labelling sim40_rap_d30
+    {'absent': 1, 'recovered': 3} segments=4
+labelling sim41_lig_d15
+    {'recovered': 3, 'fragmented': 1} segments=9
+labelling sim41_lig_d30
+    {'recovered': 4} segments=6
+labelling sim41_rap_d15
+    {'recovered': 4} segments=7
+labelling sim41_rap_d30
+    {'recovered': 4} segments=5
+labelling sim42_lig_d15
+    {'absent': 1, 'recovered': 2} segments=3
+labelling sim42_lig_d30
+    {'recovered': 3} segments=4
+labelling sim42_rap_d15
+    {'recovered': 3} segments=4
+labelling sim42_rap_d30
+    {'recovered': 3} segments=4
+labelling sim43_lig_d15
+    {'recovered': 2} segments=5
+labelling sim43_lig_d30
+    {'recovered': 1, 'absorbed': 1} segments=2
+labelling sim43_rap_d15
+    {'recovered': 2} segments=3
+labelling sim43_rap_d30
+    {'recovered': 2} segments=3
+labelling sim44_lig_d15
+    {'absent': 1, 'recovered': 3} segments=5
+labelling sim44_lig_d30
+    {'absent': 1, 'recovered': 3} segments=5
+labelling sim44_rap_d15
+    {'absent': 1, 'recovered': 3} segments=5
+labelling sim44_rap_d30
+    {'absent': 1, 'recovered': 3} segments=5
+labelling sim45_lig_d15
+    {'recovered': 3, 'absorbed': 1} segments=4
+labelling sim45_lig_d30
+    {'recovered': 3, 'absorbed': 1} segments=4
+labelling sim45_rap_d15
+    {'recovered': 4} segments=5
+labelling sim45_rap_d30
+    {'recovered': 1, 'absent': 1, 'absorbed': 1, 'gray_50_95': 1} segments=3
+labelling sim46_lig_d15
+    {'absent': 1, 'recovered': 2} segments=3
+labelling sim46_lig_d30
+    {'absent': 1, 'recovered': 2} segments=3
+labelling sim46_rap_d15
+    {'recovered': 3} segments=4
+labelling sim46_rap_d30
+    {'recovered': 3} segments=4
+labelling sim47_lig_d15
+    {'recovered': 3} segments=6
+labelling sim47_lig_d30
+    {'recovered': 3} segments=4
+labelling sim47_rap_d15
+    {'recovered': 3} segments=4
+labelling sim47_rap_d30
+    {'recovered': 3} segments=5
+labelling sim48_lig_d15
+    {'absent': 1, 'recovered': 2, 'absorbed': 1} segments=3
+labelling sim48_lig_d30
+    {'absent': 1, 'recovered': 2, 'absorbed': 1} segments=3
+labelling sim48_rap_d15
+    {'absent': 1, 'recovered': 3} segments=4
+labelling sim48_rap_d30
+    {'absent': 1, 'recovered': 3} segments=4
+labelling sim49_lig_d15
+    {'absent': 1, 'recovered': 2} segments=3
+labelling sim49_lig_d30
+    {'absent': 1, 'recovered': 2} segments=3
+labelling sim49_rap_d15
+    {'absent': 1, 'recovered': 2} segments=6
+labelling sim49_rap_d30
+    {'gray_50_95': 1, 'recovered': 1, 'absorbed': 1} segments=3
+labelling sim50_lig_d15
+    {'absent': 1, 'recovered': 2, 'gray_50_95': 1} segments=3
+labelling sim50_lig_d30
+    {'absent': 1, 'recovered': 2, 'fragmented': 1} segments=4
+labelling sim50_rap_d15
+    {'gray_50_95': 1, 'recovered': 3} segments=5
+labelling sim50_rap_d30
+    {'recovered': 3, 'gray_50_95': 1} segments=4
+
+labelled 200 assemblies

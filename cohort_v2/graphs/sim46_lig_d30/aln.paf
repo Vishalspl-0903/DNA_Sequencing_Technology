@@ -1,0 +1,2 @@
+plasmid_3	47295	0	42723	+	edge_2	47294	4572	47294	42722	42723	60	NM:i:1	ms:i:42680	AS:i:42680	nn:i:0	tp:A:P	cm:i:4235	s1:i:42689	s2:i:47	de:f:0.0000	rl:i:0	cg:Z:6322M1I36400M
+plasmid_3	47295	42723	47295	+	edge_2	47294	0	4572	4572	4572	60	NM:i:0	ms:i:4572	AS:i:4572	nn:i:0	tp:A:P	cm:i:448	s1:i:4540	s2:i:0	de:f:0	rl:i:0	cg:Z:4572M

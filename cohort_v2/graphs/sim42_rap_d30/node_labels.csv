@@ -1,0 +1,4 @@
+segment,seg_len,node_positive,mechanisms
+edge_1,4820322,1,absorbed
+edge_2,63632,1,fragmented
+edge_3,25533,1,fragmented

@@ -1,0 +1,86 @@
+[
+  {
+    "isolate": "sim01",
+    "arm": "r10_hq",
+    "chromosome": "GCF_000597845.1",
+    "n_plasmids": 3,
+    "ref": "D:\\DNA-Sequencing\\work\\sim\\sim01_ref.fasta"
+  },
+  {
+    "isolate": "sim02",
+    "arm": "r9_raw",
+    "chromosome": "GCF_000599625.1",
+    "n_plasmids": 3,
+    "ref": "D:\\DNA-Sequencing\\work\\sim\\sim02_ref.fasta"
+  },
+  {
+    "isolate": "sim03",
+    "arm": "r10_hq",
+    "chromosome": "GCF_000599645.1",
+    "n_plasmids": 4,
+    "ref": "D:\\DNA-Sequencing\\work\\sim\\sim03_ref.fasta"
+  },
+  {
+    "isolate": "sim04",
+    "arm": "r9_raw",
+    "chromosome": "GCF_000599665.1",
+    "n_plasmids": 4,
+    "ref": "D:\\DNA-Sequencing\\work\\sim\\sim04_ref.fasta"
+  },
+  {
+    "isolate": "sim05",
+    "arm": "r10_hq",
+    "chromosome": "GCF_000599685.1",
+    "n_plasmids": 4,
+    "ref": "D:\\DNA-Sequencing\\work\\sim\\sim05_ref.fasta"
+  },
+  {
+    "isolate": "sim06",
+    "arm": "r9_raw",
+    "chromosome": "GCF_000599705.1",
+    "n_plasmids": 2,
+    "ref": "D:\\DNA-Sequencing\\work\\sim\\sim06_ref.fasta"
+  },
+  {
+    "isolate": "sim07",
+    "arm": "r10_hq",
+    "chromosome": "GCF_000784925.1",
+    "n_plasmids": 5,
+    "ref": "D:\\DNA-Sequencing\\work\\sim\\sim07_ref.fasta"
+  },
+  {
+    "isolate": "sim08",
+    "arm": "r9_raw",
+    "chromosome": "GCF_000801165.1",
+    "n_plasmids": 2,
+    "ref": "D:\\DNA-Sequencing\\work\\sim\\sim08_ref.fasta"
+  },
+  {
+    "isolate": "sim09",
+    "arm": "r10_hq",
+    "chromosome": "GCF_000801185.2",
+    "n_plasmids": 5,
+    "ref": "D:\\DNA-Sequencing\\work\\sim\\sim09_ref.fasta"
+  },
+  {
+    "isolate": "sim10",
+    "arm": "r9_raw",
+    "chromosome": "GCF_000814145.2",
+    "n_plasmids": 3,
+    "ref": "D:\\DNA-Sequencing\\work\\sim\\sim10_ref.fasta"
+  },
+  {
+    "isolate": "sim11",
+    "arm": "r10_hq",
+    "chromosome": "GCF_000597845.1",
+    "n_plasmids": 3,
+    "ref": "D:\\DNA-Sequencing\\work\\sim\\sim11_ref.fasta"
+  },
+  {
+    "isolate": "sim12",
+    "arm": "r9_raw",
+    "chromosome": "GCF_000599625.1",
+    "n_plasmids": 4,
+    "ref": "D:\\DNA-Sequencing\\work\\sim\\sim12_ref.fasta"
+  }
+]

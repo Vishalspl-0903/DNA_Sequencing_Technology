@@ -1,0 +1,5 @@
+{"isolate":"sim04","tag":"sim04_rap_d30","arm":"r9_raw","prep":"rap",
+ "depth_fraction_x":30,"fragment_length":"6000,4000",
+ "flye_mode":"--nano-raw","threads":6,"read_bases":160864172,
+ "seconds_flye":204,"small_plasmid_bias":false,
+ "n_segments":23,"flye_version":"2.9.6-b1802"}

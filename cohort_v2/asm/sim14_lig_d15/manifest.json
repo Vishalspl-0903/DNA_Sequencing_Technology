@@ -1,0 +1,7 @@
+{"isolate":"sim14","tag":"sim14_lig_d15","arm":"r9_raw","prep":"lig",
+ "depth_fraction_x":15,"fragment_length":"15000,13000",
+ "badread_seed":20262226,"badread_error_model":"nanopore2020",
+ "badread_qscore_model":"nanopore2020",
+ "flye_mode":"--nano-raw","threads":6,"read_bases":79271603,
+ "seconds_flye":122,"small_plasmid_bias":true,
+ "n_segments":7,"flye_version":"2.9.6-b1802"}

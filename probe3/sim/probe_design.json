@@ -1,0 +1,13 @@
+{
+ "chromosome": "GCF_000597845.1",
+ "chromosome_len": 4758629,
+ "len_range": [
+  7500,
+  12500
+ ],
+ "copies": [
+  8,
+  15,
+  25
+ ]
+}

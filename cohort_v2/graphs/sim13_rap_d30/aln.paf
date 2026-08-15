@@ -1,0 +1,2 @@
+plasmid_4	94223	0	93127	-	edge_3	94223	0	93127	93127	93127	60	NM:i:0	ms:i:93127	AS:i:93127	nn:i:0	tp:A:P	cm:i:9289	s1:i:93096	s2:i:2263	de:f:0	rl:i:0	cg:Z:93127M
+plasmid_4	94223	93127	94223	-	edge_3	94223	93127	94223	1096	1096	60	NM:i:0	ms:i:1096	AS:i:1096	nn:i:0	tp:A:P	cm:i:111	s1:i:1095	s2:i:0	de:f:0	rl:i:0	cg:Z:1096M

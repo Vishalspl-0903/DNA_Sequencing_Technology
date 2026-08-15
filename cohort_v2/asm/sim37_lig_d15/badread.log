@@ -1,0 +1,30 @@
+  I=X=DDD= 
+  ==DDD=DX=
+  I=DDDD===
+  =D==I====I
+  =I====D==I
+  =XX==DDX= 
+  ==II=D===X
+  =XI=X=I   
+  X==D=DDD=
+  X=DD==XX===
+  IIIX==D=   
+  ===XXI=X=
+  done: loaded qscore distributions for 10000 alignments
+Read glitches:
+  rate (mean distance between glitches) = 10000
+  size (mean length of random sequence) =    25
+  skip (mean sequence lost per glitch)  =    25
+Start adapter:
+  seq: AATGTACTTCGTTCAGTTACGTATTGCT
+  rate:   90.0%
+  amount: 60.0%
+End adapter:
+  seq: GCAATACGTAACTGAACGAAGT
+  rate:   50.0%
+  amount: 20.0%
+Other problems:
+  chimera join rate: 1%
+  junk read rate:    1%
+  random read rate:  1%
+Target read set size: 82,483,935 bp

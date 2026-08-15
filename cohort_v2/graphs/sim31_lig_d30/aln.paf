@@ -1,0 +1,2 @@
+plasmid_2	30016	0	26921	+	edge_1	30016	3095	30016	26921	26921	60	NM:i:0	ms:i:26921	AS:i:26921	nn:i:0	tp:A:P	cm:i:2620	s1:i:26901	s2:i:6412	de:f:0	rl:i:0	cg:Z:26921M
+plasmid_2	30016	26921	30016	+	edge_1	30016	0	3095	3095	3095	60	NM:i:0	ms:i:3095	AS:i:3095	nn:i:0	tp:A:P	cm:i:303	s1:i:3065	s2:i:1351	de:f:0	rl:i:0	cg:Z:3095M

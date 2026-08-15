@@ -1,0 +1,2 @@
+plasmid_3	43379	0	38519	+	edge_2	43379	4860	43379	38519	38519	60	NM:i:0	ms:i:38519	AS:i:38519	nn:i:0	tp:A:P	cm:i:3878	s1:i:38502	s2:i:812	de:f:0	rl:i:0	cg:Z:38519M
+plasmid_3	43379	38519	43379	+	edge_2	43379	0	4860	4860	4860	60	NM:i:0	ms:i:4860	AS:i:4860	nn:i:0	tp:A:P	cm:i:503	s1:i:4834	s2:i:93	de:f:0	rl:i:0	cg:Z:4860M

@@ -1,0 +1,13 @@
+{
+  "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim07_lig_d15",
+  "n_segments": 5,
+  "n_links": 4,
+  "n_plasmids": 5,
+  "labels": {
+    "absent": 3,
+    "recovered": 2
+  },
+  "n_missing_for_graph_head": 3,
+  "paf_blocks": 14,
+  "paf_blocks_passing_identity": 14
+}

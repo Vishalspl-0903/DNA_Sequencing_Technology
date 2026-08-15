@@ -1,0 +1,222 @@
+{
+  "gate": "PASSED",
+  "discordance": {
+    "n_interventional_units": 158,
+    "n_prep_comparisons": 316,
+    "n_depth_comparisons": 316,
+    "prep_discordant_class": 67,
+    "prep_discordant_binary": 51,
+    "depth_discordant_class": 56,
+    "depth_discordant_binary": 42,
+    "discordant_class": 69,
+    "discordant_binary": 56,
+    "isolates_with_discordance": 42
+  },
+  "with_is_empty": {
+    "pr_auc": {
+      "B0": 0.5529083605104366,
+      "B0_pooled": 0.8640432682245395,
+      "B0+": 0.8912716084165869,
+      "B1": 0.8918341126731467,
+      "B2": 0.9556944095093005,
+      "is_empty_alone": 0.503563761294125
+    },
+    "bootstrap": {
+      "B1_vs_B0+": {
+        "mean_diff": 0.0006671944214316475,
+        "ci_lo": -0.007185640679965016,
+        "ci_hi": 0.00881315995096624,
+        "p_gt_0": 0.5445,
+        "n_boot": 2000
+      },
+      "B2_vs_B0+": {
+        "mean_diff": 0.06246646237692629,
+        "ci_lo": 0.0013920506442087952,
+        "ci_hi": 0.1370514140109834,
+        "p_gt_0": 0.98,
+        "n_boot": 2000
+      },
+      "B0+_vs_B0": {
+        "mean_diff": 0.33837416437527634,
+        "ci_lo": 0.23422204756493528,
+        "ci_hi": 0.4353979250026818,
+        "p_gt_0": 1.0,
+        "n_boot": 2000
+      },
+      "B0_pooled_vs_B0": {
+        "mean_diff": 0.306367062959455,
+        "ci_lo": 0.23078122255193662,
+        "ci_hi": 0.38276444991827147,
+        "p_gt_0": 1.0,
+        "n_boot": 2000
+      }
+    },
+    "prevalence": 0.19761499148211242,
+    "n_isolates": 50,
+    "n_units_nested": 587,
+    "n_positive": 116
+  },
+  "without_is_empty": {
+    "pr_auc": {
+      "B0": 0.2394515819064501,
+      "B0_pooled": 0.5732564818954671,
+      "B0+": 0.6168405944339795,
+      "B1": 0.8650358991196169,
+      "B2": 0.9556944095093005
+    },
+    "bootstrap": {
+      "B1_vs_B0+": {
+        "mean_diff": 0.24534658325419403,
+        "ci_lo": 0.16546783642469629,
+        "ci_hi": 0.3212458173485224,
+        "p_gt_0": 1.0,
+        "n_boot": 2000
+      },
+      "B2_vs_B0+": {
+        "mean_diff": 0.3312019214861545,
+        "ci_lo": 0.24348305118291577,
+        "ci_hi": 0.41727061931205506,
+        "p_gt_0": 1.0,
+        "n_boot": 2000
+      },
+      "B0+_vs_B0": {
+        "mean_diff": 0.3794720765973464,
+        "ci_lo": 0.31162255991959165,
+        "ci_hi": 0.46116439921029306,
+        "p_gt_0": 1.0,
+        "n_boot": 2000
+      },
+      "B0_pooled_vs_B0": {
+        "mean_diff": 0.3343990029995024,
+        "ci_lo": 0.25858727109131474,
+        "ci_hi": 0.42369199161286136,
+        "p_gt_0": 1.0,
+        "n_boot": 2000
+      }
+    },
+    "prevalence": 0.19761499148211242,
+    "n_isolates": 50,
+    "n_units_nested": 587,
+    "n_positive": 116
+  },
+  "fragmented_absorbed_only": {
+    "pr_auc": {
+      "B0": 0.13544981586309812,
+      "B0_pooled": 0.805590835333658,
+      "B0+": 0.8462875771399424,
+      "B1": 0.8000566772092373,
+      "B2": 0.9469044628556142
+    },
+    "bootstrap": {
+      "B1_vs_B0+": {
+        "mean_diff": -0.04399661186792577,
+        "ci_lo": -0.10808701710058206,
+        "ci_hi": 0.0017700578819491422,
+        "p_gt_0": 0.037,
+        "n_boot": 2000
+      },
+      "B2_vs_B0+": {
+        "mean_diff": 0.09357525194725277,
+        "ci_lo": 0.0014075640682673198,
+        "ci_hi": 0.20275438868141554,
+        "p_gt_0": 0.9765,
+        "n_boot": 2000
+      },
+      "B0+_vs_B0": {
+        "mean_diff": 0.7061873324090833,
+        "ci_lo": 0.5980244489822294,
+        "ci_hi": 0.7936486505347584,
+        "p_gt_0": 1.0,
+        "n_boot": 2000
+      },
+      "B0_pooled_vs_B0": {
+        "mean_diff": 0.6670566296090731,
+        "ci_lo": 0.5590378299254799,
+        "ci_hi": 0.771477333477605,
+        "p_gt_0": 1.0,
+        "n_boot": 2000
+      }
+    },
+    "prevalence": 0.11962616822429907,
+    "n_isolates": 50,
+    "n_units_nested": 535,
+    "n_positive": 64
+  },
+  "deterministic_tiny": null,
+  "cross_arm_stability": {
+    "B1_vs_B0+": {
+      "verdict": "UNRESOLVED",
+      "boundaries_that_changed_sign": [
+        "ci_lo"
+      ],
+      "arm_a_ci": [
+        -0.007185640679965016,
+        0.00881315995096624
+      ],
+      "arm_b_ci": [
+        0.16546783642469629,
+        0.3212458173485224
+      ]
+    },
+    "B2_vs_B0+": {
+      "verdict": "clears in both arms",
+      "boundaries_that_changed_sign": [],
+      "arm_a_ci": [
+        0.0013920506442087952,
+        0.1370514140109834
+      ],
+      "arm_b_ci": [
+        0.24348305118291577,
+        0.41727061931205506
+      ]
+    },
+    "B0+_vs_B0": {
+      "verdict": "clears in both arms",
+      "boundaries_that_changed_sign": [],
+      "arm_a_ci": [
+        0.23422204756493528,
+        0.4353979250026818
+      ],
+      "arm_b_ci": [
+        0.31162255991959165,
+        0.46116439921029306
+      ]
+    },
+    "B0_pooled_vs_B0": {
+      "verdict": "clears in both arms",
+      "boundaries_that_changed_sign": [],
+      "arm_a_ci": [
+        0.23078122255193662,
+        0.38276444991827147
+      ],
+      "arm_b_ci": [
+        0.25858727109131474,
+        0.42369199161286136
+      ]
+    }
+  },
+  "dataset": {
+    "n_isolates": 50,
+    "n_units_nested_interventional": 587,
+    "n_positive_interventional": 116,
+    "gray_band_held_out": 45,
+    "analysis_sets": {
+      "interventional": 632,
+      "deterministic_tiny": 48
+    },
+    "realised_classes": {
+      "recovered": 471,
+      "gray_50_95": 47,
+      "absent": 98,
+      "fragmented": 17,
+      "absorbed": 47
+    },
+    "realised_classes_interventional": {
+      "recovered": 471,
+      "gray_50_95": 45,
+      "fragmented": 17,
+      "absent": 52,
+      "absorbed": 47
+    }
+  }
+}

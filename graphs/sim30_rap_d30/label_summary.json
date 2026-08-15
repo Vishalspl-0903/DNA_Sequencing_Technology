@@ -1,0 +1,12 @@
+{
+  "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim30_rap_d30",
+  "n_segments": 3,
+  "n_links": 4,
+  "n_plasmids": 2,
+  "labels": {
+    "recovered": 2
+  },
+  "n_missing_for_graph_head": 0,
+  "paf_blocks": 4,
+  "paf_blocks_passing_identity": 4
+}

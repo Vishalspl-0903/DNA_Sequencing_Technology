@@ -1,0 +1,5 @@
+{"isolate":"sim11","tag":"sim11_rap_d15","arm":"r10_hq","prep":"rap",
+ "depth_fraction_x":15,"fragment_length":"6000,4000",
+ "flye_mode":"--nano-hq","threads":10,"read_bases":73042955,
+ "seconds_flye":53,"small_plasmid_bias":false,
+ "n_segments":14,"flye_version":"2.9.6-b1802"}

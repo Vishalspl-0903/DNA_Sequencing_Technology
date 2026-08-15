@@ -1,0 +1,5 @@
+plasmid,plasmid_len,label,best_segment,best_cov_frac,best_segment_len,cumulative_cov_frac,n_support,support
+plasmid_1,3991,absent,,0.0,0,0.0,0,
+plasmid_2,10046,fragmented,edge_3,0.6185,6213,1.0,2,edge_2;edge_3
+plasmid_3,9294,gray_50_95,edge_2,0.8599,9312,0.8599,1,edge_2
+plasmid_4,188527,recovered,edge_4,1.0,188533,1.0,1,edge_4

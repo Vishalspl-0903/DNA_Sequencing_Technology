@@ -1,0 +1,4 @@
+plasmid_1	8953	0	8953	+	edge_4	17901	4845	13798	8953	8953	60	NM:i:0	ms:i:8953	AS:i:8953	nn:i:0	tp:A:P	cm:i:891	s1:i:8938	s2:i:4833	de:f:0	rl:i:0	cg:Z:8953M
+plasmid_2	9294	0	9294	-	edge_2	18597	869	10163	9294	9294	60	NM:i:0	ms:i:9294	AS:i:9294	nn:i:0	tp:A:P	cm:i:937	s1:i:9277	s2:i:7145	de:f:0	rl:i:0	cg:Z:9294M
+plasmid_3	33311	854	33311	+	edge_3	33311	0	32457	32457	32457	60	NM:i:0	ms:i:32457	AS:i:32457	nn:i:0	tp:A:P	cm:i:3273	s1:i:32439	s2:i:812	de:f:0	rl:i:0	cg:Z:32457M
+plasmid_3	33311	0	854	+	edge_3	33311	32457	33311	854	854	60	NM:i:0	ms:i:854	AS:i:854	nn:i:0	tp:A:P	cm:i:91	s1:i:838	s2:i:370	de:f:0	rl:i:0	cg:Z:854M

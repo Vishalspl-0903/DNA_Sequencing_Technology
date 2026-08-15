@@ -1,0 +1,2824 @@
+[
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim01_lig_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim01_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim01_lig_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim01_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim01_rap_d15",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim01_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim01_rap_d30",
+    "n_segments": 4,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim01_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim02_lig_d15",
+    "n_segments": 4,
+    "n_links": 6,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 9,
+    "paf_blocks_passing_identity": 9,
+    "tag": "sim02_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim02_lig_d30",
+    "n_segments": 3,
+    "n_links": 6,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 1,
+      "gray_50_95": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 9,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim02_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim02_rap_d15",
+    "n_segments": 5,
+    "n_links": 6,
+    "n_plasmids": 3,
+    "labels": {
+      "gray_50_95": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 13,
+    "paf_blocks_passing_identity": 13,
+    "tag": "sim02_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim02_rap_d30",
+    "n_segments": 5,
+    "n_links": 7,
+    "n_plasmids": 3,
+    "labels": {
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 10,
+    "paf_blocks_passing_identity": 10,
+    "tag": "sim02_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim03_lig_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 11,
+    "paf_blocks_passing_identity": 10,
+    "tag": "sim03_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim03_lig_d30",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 10,
+    "paf_blocks_passing_identity": 10,
+    "tag": "sim03_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim03_rap_d15",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 10,
+    "paf_blocks_passing_identity": 10,
+    "tag": "sim03_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim03_rap_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 10,
+    "paf_blocks_passing_identity": 10,
+    "tag": "sim03_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim04_lig_d15",
+    "n_segments": 17,
+    "n_links": 9,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 3,
+      "gray_50_95": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 16,
+    "paf_blocks_passing_identity": 16,
+    "tag": "sim04_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim04_lig_d30",
+    "n_segments": 15,
+    "n_links": 8,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 3,
+      "gray_50_95": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 13,
+    "paf_blocks_passing_identity": 13,
+    "tag": "sim04_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim04_rap_d15",
+    "n_segments": 16,
+    "n_links": 11,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 2,
+      "fragmented": 1,
+      "gray_50_95": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 17,
+    "paf_blocks_passing_identity": 17,
+    "tag": "sim04_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim04_rap_d30",
+    "n_segments": 15,
+    "n_links": 9,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 3,
+      "gray_50_95": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 15,
+    "paf_blocks_passing_identity": 14,
+    "tag": "sim04_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim05_lig_d15",
+    "n_segments": 4,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 1,
+      "absorbed": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim05_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim05_lig_d30",
+    "n_segments": 3,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 1,
+      "absorbed": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim05_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim05_rap_d15",
+    "n_segments": 4,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "gray_50_95": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim05_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim05_rap_d30",
+    "n_segments": 3,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "gray_50_95": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim05_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim06_lig_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 2,
+    "labels": {
+      "absent": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim06_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim06_lig_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 2,
+    "labels": {
+      "absent": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim06_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim06_rap_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 2,
+    "labels": {
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim06_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim06_rap_d30",
+    "n_segments": 3,
+    "n_links": 5,
+    "n_plasmids": 2,
+    "labels": {
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim06_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim07_lig_d15",
+    "n_segments": 5,
+    "n_links": 4,
+    "n_plasmids": 5,
+    "labels": {
+      "absent": 3,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 14,
+    "paf_blocks_passing_identity": 14,
+    "tag": "sim07_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim07_lig_d30",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 5,
+    "labels": {
+      "absent": 2,
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim07_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim07_rap_d15",
+    "n_segments": 3,
+    "n_links": 5,
+    "n_plasmids": 5,
+    "labels": {
+      "absent": 3,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 14,
+    "paf_blocks_passing_identity": 14,
+    "tag": "sim07_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim07_rap_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 5,
+    "labels": {
+      "absent": 3,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 14,
+    "paf_blocks_passing_identity": 14,
+    "tag": "sim07_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim08_lig_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 2,
+    "labels": {
+      "gray_50_95": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 19,
+    "paf_blocks_passing_identity": 19,
+    "tag": "sim08_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim08_lig_d30",
+    "n_segments": 3,
+    "n_links": 5,
+    "n_plasmids": 2,
+    "labels": {
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim08_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim08_rap_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 2,
+    "labels": {
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim08_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim08_rap_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 2,
+    "labels": {
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim08_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim09_lig_d15",
+    "n_segments": 8,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 1,
+      "absorbed": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim09_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim09_lig_d30",
+    "n_segments": 4,
+    "n_links": 7,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 1,
+      "absorbed": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim09_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim09_rap_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 1,
+      "absorbed": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim09_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim09_rap_d30",
+    "n_segments": 5,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 1,
+      "absorbed": 1,
+      "recovered": 1,
+      "fragmented": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 9,
+    "paf_blocks_passing_identity": 9,
+    "tag": "sim09_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim10_lig_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim10_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim10_lig_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim10_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim10_rap_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim10_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim10_rap_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim10_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim11_lig_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim11_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim11_lig_d30",
+    "n_segments": 3,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim11_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim11_rap_d15",
+    "n_segments": 3,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 3,
+    "paf_blocks_passing_identity": 3,
+    "tag": "sim11_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim11_rap_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 3,
+    "paf_blocks_passing_identity": 3,
+    "tag": "sim11_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim12_lig_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim12_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim12_lig_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim12_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim12_rap_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim12_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim12_rap_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim12_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim13_lig_d15",
+    "n_segments": 3,
+    "n_links": 2,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 3,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim13_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim13_lig_d30",
+    "n_segments": 2,
+    "n_links": 2,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 3,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 1,
+    "paf_blocks_passing_identity": 1,
+    "tag": "sim13_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim13_rap_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 3,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim13_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim13_rap_d30",
+    "n_segments": 3,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 3,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim13_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim14_lig_d15",
+    "n_segments": 7,
+    "n_links": 9,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 3,
+      "fragmented": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 10,
+    "paf_blocks_passing_identity": 10,
+    "tag": "sim14_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim14_lig_d30",
+    "n_segments": 6,
+    "n_links": 9,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 3,
+      "absorbed": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 8,
+    "paf_blocks_passing_identity": 8,
+    "tag": "sim14_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim14_rap_d15",
+    "n_segments": 6,
+    "n_links": 9,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 3,
+      "absorbed": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 8,
+    "paf_blocks_passing_identity": 8,
+    "tag": "sim14_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim14_rap_d30",
+    "n_segments": 6,
+    "n_links": 10,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 3,
+      "absorbed": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 10,
+    "paf_blocks_passing_identity": 10,
+    "tag": "sim14_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim15_lig_d15",
+    "n_segments": 4,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim15_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim15_lig_d30",
+    "n_segments": 2,
+    "n_links": 2,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim15_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim15_rap_d15",
+    "n_segments": 3,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim15_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim15_rap_d30",
+    "n_segments": 2,
+    "n_links": 2,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim15_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim16_lig_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim16_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim16_lig_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim16_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim16_rap_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim16_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim16_rap_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim16_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim17_lig_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 3,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim17_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim17_lig_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 3,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim17_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim17_rap_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 3,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim17_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim17_rap_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 3,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim17_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim18_lig_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absorbed": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim18_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim18_lig_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absorbed": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim18_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim18_rap_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absorbed": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim18_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim18_rap_d30",
+    "n_segments": 4,
+    "n_links": 6,
+    "n_plasmids": 3,
+    "labels": {
+      "absorbed": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim18_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim19_lig_d15",
+    "n_segments": 4,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 1,
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim19_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim19_lig_d30",
+    "n_segments": 7,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 1,
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim19_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim19_rap_d15",
+    "n_segments": 6,
+    "n_links": 5,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 1,
+      "fragmented": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim19_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim19_rap_d30",
+    "n_segments": 4,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 1,
+      "absorbed": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim19_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim20_lig_d15",
+    "n_segments": 5,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 4
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim20_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim20_lig_d30",
+    "n_segments": 5,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 4
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 8,
+    "paf_blocks_passing_identity": 8,
+    "tag": "sim20_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim20_rap_d15",
+    "n_segments": 5,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 4
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 8,
+    "paf_blocks_passing_identity": 8,
+    "tag": "sim20_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim20_rap_d30",
+    "n_segments": 5,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 4
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim20_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim21_lig_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "absorbed": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 3,
+    "paf_blocks_passing_identity": 3,
+    "tag": "sim21_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim21_lig_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "absorbed": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 3,
+    "paf_blocks_passing_identity": 3,
+    "tag": "sim21_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim21_rap_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "gray_50_95": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim21_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim21_rap_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "gray_50_95": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim21_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim22_lig_d15",
+    "n_segments": 4,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim22_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim22_lig_d30",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 3,
+    "labels": {
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim22_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim22_rap_d15",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 3,
+    "labels": {
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim22_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim22_rap_d30",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 3,
+    "labels": {
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim22_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim23_lig_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim23_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim23_lig_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim23_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim23_rap_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim23_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim23_rap_d30",
+    "n_segments": 5,
+    "n_links": 8,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim23_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim24_lig_d15",
+    "n_segments": 6,
+    "n_links": 7,
+    "n_plasmids": 4,
+    "labels": {
+      "absorbed": 1,
+      "absent": 1,
+      "fragmented": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 9,
+    "paf_blocks_passing_identity": 8,
+    "tag": "sim24_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim24_lig_d30",
+    "n_segments": 6,
+    "n_links": 7,
+    "n_plasmids": 4,
+    "labels": {
+      "absorbed": 1,
+      "absent": 1,
+      "fragmented": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 9,
+    "paf_blocks_passing_identity": 8,
+    "tag": "sim24_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim24_rap_d15",
+    "n_segments": 6,
+    "n_links": 7,
+    "n_plasmids": 4,
+    "labels": {
+      "absorbed": 1,
+      "absent": 1,
+      "fragmented": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 9,
+    "paf_blocks_passing_identity": 8,
+    "tag": "sim24_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim24_rap_d30",
+    "n_segments": 6,
+    "n_links": 7,
+    "n_plasmids": 4,
+    "labels": {
+      "absorbed": 1,
+      "recovered": 2,
+      "absent": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 11,
+    "paf_blocks_passing_identity": 10,
+    "tag": "sim24_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim25_lig_d15",
+    "n_segments": 3,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 16,
+    "paf_blocks_passing_identity": 16,
+    "tag": "sim25_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim25_lig_d30",
+    "n_segments": 3,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 16,
+    "paf_blocks_passing_identity": 16,
+    "tag": "sim25_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim25_rap_d15",
+    "n_segments": 5,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 16,
+    "paf_blocks_passing_identity": 16,
+    "tag": "sim25_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim25_rap_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 16,
+    "paf_blocks_passing_identity": 16,
+    "tag": "sim25_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim26_lig_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 3,
+    "paf_blocks_passing_identity": 3,
+    "tag": "sim26_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim26_lig_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 3,
+    "paf_blocks_passing_identity": 3,
+    "tag": "sim26_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim26_rap_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 3,
+    "paf_blocks_passing_identity": 3,
+    "tag": "sim26_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim26_rap_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 3,
+    "paf_blocks_passing_identity": 3,
+    "tag": "sim26_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim27_lig_d15",
+    "n_segments": 9,
+    "n_links": 9,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 1,
+      "fragmented": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 12,
+    "paf_blocks_passing_identity": 12,
+    "tag": "sim27_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim27_lig_d30",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim27_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim27_rap_d15",
+    "n_segments": 6,
+    "n_links": 5,
+    "n_plasmids": 3,
+    "labels": {
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim27_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim27_rap_d30",
+    "n_segments": 6,
+    "n_links": 8,
+    "n_plasmids": 3,
+    "labels": {
+      "recovered": 2,
+      "fragmented": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim27_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim28_lig_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 3,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim28_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim28_lig_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 3,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim28_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim28_rap_d15",
+    "n_segments": 2,
+    "n_links": 1,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 3,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim28_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim28_rap_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 3,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim28_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim29_lig_d15",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 4,
+    "labels": {
+      "absorbed": 1,
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim29_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim29_lig_d30",
+    "n_segments": 4,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absorbed": 1,
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim29_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim29_rap_d15",
+    "n_segments": 4,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absorbed": 1,
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim29_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim29_rap_d30",
+    "n_segments": 4,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absorbed": 1,
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim29_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim30_lig_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim30_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim30_lig_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim30_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim30_rap_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim30_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim30_rap_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim30_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim31_lig_d15",
+    "n_segments": 4,
+    "n_links": 3,
+    "n_plasmids": 2,
+    "labels": {
+      "absent": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim31_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim31_lig_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 2,
+    "labels": {
+      "absent": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim31_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim31_rap_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 2,
+    "labels": {
+      "absent": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 1,
+    "paf_blocks_passing_identity": 1,
+    "tag": "sim31_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim31_rap_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 2,
+    "labels": {
+      "absent": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim31_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim32_lig_d15",
+    "n_segments": 4,
+    "n_links": 6,
+    "n_plasmids": 5,
+    "labels": {
+      "absent": 1,
+      "absorbed": 1,
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim32_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim32_lig_d30",
+    "n_segments": 5,
+    "n_links": 6,
+    "n_plasmids": 5,
+    "labels": {
+      "absent": 1,
+      "absorbed": 1,
+      "recovered": 2,
+      "gray_50_95": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 8,
+    "paf_blocks_passing_identity": 8,
+    "tag": "sim32_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim32_rap_d15",
+    "n_segments": 4,
+    "n_links": 6,
+    "n_plasmids": 5,
+    "labels": {
+      "absent": 1,
+      "absorbed": 1,
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim32_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim32_rap_d30",
+    "n_segments": 5,
+    "n_links": 6,
+    "n_plasmids": 5,
+    "labels": {
+      "absent": 1,
+      "absorbed": 1,
+      "recovered": 3
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim32_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim33_lig_d15",
+    "n_segments": 4,
+    "n_links": 6,
+    "n_plasmids": 2,
+    "labels": {
+      "absent": 1,
+      "fragmented": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 37,
+    "paf_blocks_passing_identity": 36,
+    "tag": "sim33_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim33_lig_d30",
+    "n_segments": 5,
+    "n_links": 7,
+    "n_plasmids": 2,
+    "labels": {
+      "absent": 1,
+      "gray_50_95": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 24,
+    "paf_blocks_passing_identity": 21,
+    "tag": "sim33_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim33_rap_d15",
+    "n_segments": 4,
+    "n_links": 6,
+    "n_plasmids": 2,
+    "labels": {
+      "absent": 1,
+      "fragmented": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 40,
+    "paf_blocks_passing_identity": 39,
+    "tag": "sim33_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim33_rap_d30",
+    "n_segments": 4,
+    "n_links": 6,
+    "n_plasmids": 2,
+    "labels": {
+      "absent": 1,
+      "fragmented": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 50,
+    "paf_blocks_passing_identity": 49,
+    "tag": "sim33_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim34_lig_d15",
+    "n_segments": 6,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 8,
+    "paf_blocks_passing_identity": 8,
+    "tag": "sim34_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim34_lig_d30",
+    "n_segments": 4,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim34_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim34_rap_d15",
+    "n_segments": 4,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 1,
+      "gray_50_95": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim34_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim34_rap_d30",
+    "n_segments": 4,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "gray_50_95": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim34_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim35_lig_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim35_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim35_lig_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 3,
+    "paf_blocks_passing_identity": 3,
+    "tag": "sim35_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim35_rap_d15",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 1,
+      "gray_50_95": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim35_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim35_rap_d30",
+    "n_segments": 3,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim35_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim36_lig_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "gray_50_95": 1,
+      "absorbed": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim36_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim36_lig_d30",
+    "n_segments": 2,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "gray_50_95": 1,
+      "absorbed": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim36_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim36_rap_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "gray_50_95": 1,
+      "absorbed": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim36_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim36_rap_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "gray_50_95": 1,
+      "absorbed": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim36_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim37_lig_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim37_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim37_lig_d30",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim37_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim37_rap_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim37_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim37_rap_d30",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim37_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim38_lig_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 3,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim38_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim38_lig_d30",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim38_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim38_rap_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 3,
+    "paf_blocks_passing_identity": 3,
+    "tag": "sim38_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim38_rap_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim38_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim39_lig_d15",
+    "n_segments": 5,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 1,
+      "recovered": 2,
+      "gray_50_95": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 17,
+    "paf_blocks_passing_identity": 17,
+    "tag": "sim39_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim39_lig_d30",
+    "n_segments": 5,
+    "n_links": 5,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 4
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 8,
+    "paf_blocks_passing_identity": 8,
+    "tag": "sim39_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim39_rap_d15",
+    "n_segments": 7,
+    "n_links": 5,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 4
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 7,
+    "paf_blocks_passing_identity": 7,
+    "tag": "sim39_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim39_rap_d30",
+    "n_segments": 6,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 4
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 8,
+    "paf_blocks_passing_identity": 8,
+    "tag": "sim39_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim40_lig_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim40_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim40_lig_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim40_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim40_rap_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "gray_50_95": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim40_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim40_rap_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "gray_50_95": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim40_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim41_lig_d15",
+    "n_segments": 5,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim41_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim41_lig_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim41_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim41_rap_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim41_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim41_rap_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim41_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim42_lig_d15",
+    "n_segments": 3,
+    "n_links": 5,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "absorbed": 1,
+      "fragmented": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim42_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim42_lig_d30",
+    "n_segments": 3,
+    "n_links": 5,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "absorbed": 1,
+      "fragmented": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim42_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim42_rap_d15",
+    "n_segments": 2,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "absorbed": 1,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim42_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim42_rap_d30",
+    "n_segments": 3,
+    "n_links": 5,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "absorbed": 1,
+      "fragmented": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim42_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim43_lig_d15",
+    "n_segments": 8,
+    "n_links": 5,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim43_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim43_lig_d30",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim43_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim43_rap_d15",
+    "n_segments": 5,
+    "n_links": 5,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim43_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim43_rap_d30",
+    "n_segments": 4,
+    "n_links": 5,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim43_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim44_lig_d15",
+    "n_segments": 5,
+    "n_links": 7,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim44_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim44_lig_d30",
+    "n_segments": 4,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim44_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim44_rap_d15",
+    "n_segments": 4,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim44_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim44_rap_d30",
+    "n_segments": 4,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim44_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim45_lig_d15",
+    "n_segments": 4,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 3,
+      "absent": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim45_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim45_lig_d30",
+    "n_segments": 3,
+    "n_links": 5,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim45_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim45_rap_d15",
+    "n_segments": 6,
+    "n_links": 6,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 3,
+      "absent": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 6,
+    "paf_blocks_passing_identity": 6,
+    "tag": "sim45_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim45_rap_d30",
+    "n_segments": 4,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 3,
+      "absent": 1
+    },
+    "n_missing_for_graph_head": 1,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim45_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim46_lig_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim46_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim46_lig_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim46_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim46_rap_d15",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim46_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim46_rap_d30",
+    "n_segments": 2,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absent": 2,
+      "recovered": 1
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 2,
+    "paf_blocks_passing_identity": 2,
+    "tag": "sim46_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim47_lig_d15",
+    "n_segments": 3,
+    "n_links": 3,
+    "n_plasmids": 3,
+    "labels": {
+      "absorbed": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim47_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim47_lig_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absorbed": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim47_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim47_rap_d15",
+    "n_segments": 5,
+    "n_links": 4,
+    "n_plasmids": 3,
+    "labels": {
+      "absorbed": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim47_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim47_rap_d30",
+    "n_segments": 6,
+    "n_links": 6,
+    "n_plasmids": 3,
+    "labels": {
+      "absorbed": 1,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim47_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim48_lig_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim48_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim48_lig_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim48_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim48_rap_d15",
+    "n_segments": 3,
+    "n_links": 3,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 5,
+    "paf_blocks_passing_identity": 5,
+    "tag": "sim48_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim48_rap_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim48_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim49_lig_d15",
+    "n_segments": 6,
+    "n_links": 9,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 3,
+      "fragmented": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 10,
+    "paf_blocks_passing_identity": 10,
+    "tag": "sim49_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim49_lig_d30",
+    "n_segments": 6,
+    "n_links": 8,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 3,
+      "fragmented": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 10,
+    "paf_blocks_passing_identity": 10,
+    "tag": "sim49_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim49_rap_d15",
+    "n_segments": 6,
+    "n_links": 8,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 3,
+      "fragmented": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 9,
+    "paf_blocks_passing_identity": 9,
+    "tag": "sim49_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim49_rap_d30",
+    "n_segments": 6,
+    "n_links": 8,
+    "n_plasmids": 4,
+    "labels": {
+      "recovered": 3,
+      "fragmented": 1
+    },
+    "n_missing_for_graph_head": 0,
+    "paf_blocks": 10,
+    "paf_blocks_passing_identity": 10,
+    "tag": "sim49_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim50_lig_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim50_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim50_lig_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim50_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim50_rap_d15",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim50_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/asm/sim50_rap_d30",
+    "n_segments": 3,
+    "n_links": 4,
+    "n_plasmids": 4,
+    "labels": {
+      "absent": 2,
+      "recovered": 2
+    },
+    "n_missing_for_graph_head": 2,
+    "paf_blocks": 4,
+    "paf_blocks_passing_identity": 4,
+    "tag": "sim50_rap_d30"
+  }
+]

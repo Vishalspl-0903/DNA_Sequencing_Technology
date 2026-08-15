@@ -1,0 +1,70 @@
+{
+ "seed": 20260814,
+ "chromosome": "GCF_000597845.1",
+ "chromosome_len": 4758629,
+ "ladder_a_copy": 15,
+ "ladder_b_copies": 2,
+ "repeat_identity": 0.99,
+ "placements": [
+  {
+   "plasmid": "ladderB_rep03kb",
+   "family_src": 2625298,
+   "repeat_len": 3000,
+   "inserted_at": [
+    [
+     72908,
+     3000
+    ],
+    [
+     37454,
+     3000
+    ]
+   ]
+  },
+  {
+   "plasmid": "ladderB_rep08kb",
+   "family_src": 299315,
+   "repeat_len": 8000,
+   "inserted_at": [
+    [
+     61952,
+     8000
+    ],
+    [
+     31976,
+     8000
+    ]
+   ]
+  },
+  {
+   "plasmid": "ladderB_rep15kb",
+   "family_src": 2458972,
+   "repeat_len": 15000,
+   "inserted_at": [
+    [
+     112860,
+     15000
+    ],
+    [
+     57430,
+     15000
+    ]
+   ]
+  },
+  {
+   "plasmid": "ladderB_rep25kb",
+   "family_src": 4639495,
+   "repeat_len": 25000,
+   "inserted_at": [
+    [
+     90544,
+     25000
+    ],
+    [
+     46272,
+     25000
+    ]
+   ]
+  }
+ ]
+}

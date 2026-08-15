@@ -1,0 +1,10 @@
+[M::mm_idx_gen::0.151*0.45] collected minimizers
+[M::mm_idx_gen::0.161*0.76] sorted minimizers
+[M::main::0.162*0.76] loaded/built the index for 5 target sequence(s)
+[M::mm_mapopt_update::0.167*0.76] mid_occ = 50
+[M::mm_idx_stat] kmer size: 19; skip: 19; is_hpc: 0; #seq: 5
+[M::mm_idx_stat::0.172*0.76] distinct minimizers: 480043 (98.63% are singletons); average occurrences: 1.028; average spacing: 10.007; total length: 4940170
+[M::worker_pipeline::0.207*0.83] mapped 4 sequences
+[M::main] Version: 2.31-r1302
+[M::main] CMD: /home/premn/micromamba/envs/plasmid/bin/minimap2 -x asm5 -c --secondary=yes -N 50 -t 8 /mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/graphs/sim20_lig_d30/segments.fasta /mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/graphs/sim20_lig_d30/plasmids.fasta
+[M::main] Real time: 0.217 sec; CPU: 0.175 sec; Peak RSS: 0.041 GB

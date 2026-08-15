@@ -1,0 +1,9 @@
+﻿reference: 7 records  05:05:29
+[probe02_rap_d15] reads done 164M 05:12:15
+[probe02_rap_d30] reads done 327M 05:22:48
+PHASE A COMPLETE 05:22:48
+[probe02_rap_d30] --nano-hq ok 344s  segments=7  REAL-edges=0  self-loops=12
+[probe02_rap_d15] --nano-raw ok 239s  segments=9  REAL-edges=0  self-loops=13
+PROBE 2 COMPLETE 05:32:36
+               total        used        free      shared  buff/cache   available
+Mem:            8934         523        8257           2         309        8410
