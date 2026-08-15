@@ -1,0 +1,7 @@
+{"isolate":"sim45","tag":"sim45_rap_d30","arm":"r10_hq","prep":"rap",
+ "depth_fraction_x":30,"fragment_length":"15000,13000",
+ "badread_seed":20265351,"badread_error_model":"nanopore2023",
+ "badread_qscore_model":"nanopore2023",
+ "flye_mode":"--nano-hq","threads":10,"read_bases":154412772,
+ "seconds_flye":190,"small_plasmid_bias":false,
+ "n_segments":4,"flye_version":"2.9.6-b1802"}

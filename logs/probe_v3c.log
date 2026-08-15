@@ -1,0 +1,14 @@
+﻿reference: 28 records  06:16:41
+[probe03r9_rap_d15] reads done 145M 06:24:52
+[probe03_rap_d15] reads done 145M 06:27:33
+[probe03_lig_d15] reads done 145M 06:27:35
+[probe03_rap_d30] reads done 289M 06:36:15
+[probe03_lig_d30] reads done 289M 06:36:19
+PHASE A COMPLETE 06:36:19
+[probe03_lig_d30] --nano-hq ok 269s segments=16
+[probe03_rap_d30] --nano-hq ok 193s segments=18
+[probe03_lig_d15] --nano-hq ok 86s segments=12
+[probe03_rap_d15] --nano-hq ok 123s segments=17
+[probe03r9_rap_d15] --nano-raw ok 174s segments=16
+PROBE 3 COMPLETE 06:50:30
+1.3G	/home/premn/probe3_scratch

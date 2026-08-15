@@ -1,0 +1,80 @@
+[
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/probe3/asm/probe03_lig_d15",
+    "n_segments": 12,
+    "n_links": 11,
+    "n_plasmids": 27,
+    "labels": {
+      "gray_50_95": 9,
+      "absent": 9,
+      "recovered": 9
+    },
+    "n_missing_for_graph_head": 9,
+    "paf_blocks": 73,
+    "paf_blocks_passing_identity": 71,
+    "tag": "probe03_lig_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/probe3/asm/probe03_lig_d30",
+    "n_segments": 16,
+    "n_links": 14,
+    "n_plasmids": 27,
+    "labels": {
+      "gray_50_95": 2,
+      "absent": 9,
+      "recovered": 16
+    },
+    "n_missing_for_graph_head": 9,
+    "paf_blocks": 78,
+    "paf_blocks_passing_identity": 74,
+    "tag": "probe03_lig_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/probe3/asm/probe03_rap_d15",
+    "n_segments": 17,
+    "n_links": 15,
+    "n_plasmids": 27,
+    "labels": {
+      "gray_50_95": 5,
+      "absent": 4,
+      "recovered": 18
+    },
+    "n_missing_for_graph_head": 4,
+    "paf_blocks": 83,
+    "paf_blocks_passing_identity": 81,
+    "tag": "probe03_rap_d15"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/probe3/asm/probe03_rap_d30",
+    "n_segments": 18,
+    "n_links": 18,
+    "n_plasmids": 27,
+    "labels": {
+      "gray_50_95": 3,
+      "absent": 3,
+      "recovered": 19,
+      "fragmented": 1,
+      "absorbed": 1
+    },
+    "n_missing_for_graph_head": 3,
+    "paf_blocks": 87,
+    "paf_blocks_passing_identity": 85,
+    "tag": "probe03_rap_d30"
+  },
+  {
+    "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/probe3/asm/probe03r9_rap_d15",
+    "n_segments": 16,
+    "n_links": 14,
+    "n_plasmids": 27,
+    "labels": {
+      "gray_50_95": 5,
+      "absent": 5,
+      "recovered": 14,
+      "fragmented": 3
+    },
+    "n_missing_for_graph_head": 5,
+    "paf_blocks": 101,
+    "paf_blocks_passing_identity": 99,
+    "tag": "probe03r9_rap_d15"
+  }
+]

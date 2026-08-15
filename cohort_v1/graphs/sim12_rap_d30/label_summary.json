@@ -1,0 +1,14 @@
+{
+  "asm_dir": "/mnt/d/DNA-Sequencing/work/asm/sim12_rap_d30",
+  "n_segments": 31,
+  "n_links": 43,
+  "n_plasmids": 4,
+  "labels": {
+    "recovered": 2,
+    "absent": 1,
+    "fragmented": 1
+  },
+  "n_missing_for_graph_head": 1,
+  "paf_blocks": 6,
+  "paf_blocks_passing_identity": 6
+}

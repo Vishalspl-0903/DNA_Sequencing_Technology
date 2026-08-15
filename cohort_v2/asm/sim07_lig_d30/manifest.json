@@ -1,0 +1,7 @@
+{"isolate":"sim07","tag":"sim07_lig_d30","arm":"r10_hq","prep":"lig",
+ "depth_fraction_x":30,"fragment_length":"15000,13000",
+ "badread_seed":20261541,"badread_error_model":"nanopore2023",
+ "badread_qscore_model":"nanopore2023",
+ "flye_mode":"--nano-hq","threads":10,"read_bases":170050481,
+ "seconds_flye":143,"small_plasmid_bias":true,
+ "n_segments":4,"flye_version":"2.9.6-b1802"}

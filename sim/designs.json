@@ -1,0 +1,2353 @@
+{
+  "provenance": {
+    "cohort_version": 2,
+    "seed": 20260811,
+    "isolate_seed_stride": 100000,
+    "n_isolates": 50,
+    "pool_per_stratum": 200,
+    "strata": {
+      "tiny": [
+        1000,
+        8400
+      ],
+      "small": [
+        8400,
+        10900
+      ],
+      "medium": [
+        10900,
+        100000
+      ],
+      "large": [
+        100000,
+        500000
+      ]
+    },
+    "analysis_set": {
+      "tiny": "deterministic_tiny",
+      "small": "interventional",
+      "medium": "interventional",
+      "large": "interventional"
+    },
+    "copy_range": {
+      "tiny": [
+        10,
+        40
+      ],
+      "small": [
+        8,
+        25
+      ],
+      "medium": [
+        2,
+        6
+      ],
+      "large": [
+        1,
+        2
+      ]
+    },
+    "repeat": {
+      "isolate_fraction": 0.4,
+      "n_repeat_isolates": 20,
+      "is_len_range": [
+        1000,
+        2000
+      ],
+      "is_identity": 0.99,
+      "cointegrate_copy_number": 1,
+      "repeat_isolates": [
+        "sim01",
+        "sim06",
+        "sim07",
+        "sim08",
+        "sim15",
+        "sim16",
+        "sim17",
+        "sim18",
+        "sim20",
+        "sim21",
+        "sim24",
+        "sim26",
+        "sim27",
+        "sim32",
+        "sim34",
+        "sim39",
+        "sim43",
+        "sim45",
+        "sim48",
+        "sim49"
+      ]
+    },
+    "compositions": [
+      [
+        "small",
+        "small",
+        "medium"
+      ],
+      [
+        "small",
+        "small",
+        "medium",
+        "large"
+      ],
+      [
+        "tiny",
+        "small",
+        "small",
+        "medium"
+      ],
+      [
+        "small",
+        "small",
+        "large"
+      ],
+      [
+        "small",
+        "medium"
+      ],
+      [
+        "small",
+        "small",
+        "medium",
+        "medium"
+      ],
+      [
+        "tiny",
+        "small",
+        "small",
+        "large"
+      ],
+      [
+        "small",
+        "small",
+        "medium"
+      ],
+      [
+        "small",
+        "medium",
+        "large"
+      ],
+      [
+        "small",
+        "small",
+        "medium",
+        "large"
+      ],
+      [
+        "tiny",
+        "small",
+        "small",
+        "medium"
+      ],
+      [
+        "small",
+        "small",
+        "medium"
+      ],
+      [
+        "small",
+        "small",
+        "large"
+      ],
+      [
+        "small",
+        "medium",
+        "medium"
+      ],
+      [
+        "tiny",
+        "small",
+        "small",
+        "medium"
+      ],
+      [
+        "small",
+        "small",
+        "medium",
+        "large"
+      ],
+      [
+        "small",
+        "small",
+        "medium"
+      ],
+      [
+        "small",
+        "medium"
+      ],
+      [
+        "tiny",
+        "small",
+        "small",
+        "large"
+      ],
+      [
+        "small",
+        "small",
+        "medium",
+        "medium"
+      ],
+      [
+        "small",
+        "small",
+        "medium"
+      ],
+      [
+        "small",
+        "medium",
+        "large"
+      ],
+      [
+        "tiny",
+        "small",
+        "small",
+        "medium"
+      ],
+      [
+        "small",
+        "small",
+        "large"
+      ],
+      [
+        "small",
+        "small",
+        "medium",
+        "large"
+      ]
+    ],
+    "inputs": {
+      "raw_plasmids": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\Dataset\\sequences.fasta",
+      "manifest": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\refs\\plasmid_manifest.csv",
+      "chromosome_dir": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\Dataset\\ecoli_10\\ncbi_dataset\\data"
+    },
+    "cells_per_isolate": [
+      "lig_d30",
+      "lig_d15",
+      "rap_d30",
+      "rap_d15"
+    ]
+  },
+  "isolates": [
+    {
+      "isolate": "sim01",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000597845.1",
+      "chromosome_len": 4849470,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim01_ref.fasta",
+      "isolate_seed": 20360811,
+      "plasmid_accessions": [
+        "NZ_CP132947.1",
+        "CP052411.1",
+        "NZ_CP003998.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim01",
+        "family_length": 1954,
+        "family_source_offset_in_backbone": 3153770,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 3,
+        "slot_copies": {},
+        "cointegrate_slot": 2,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim01",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1954,
+            "identity": 0.98976,
+            "offset_original": 126889,
+            "offset_final": 126889
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim01",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1954,
+            "identity": 0.98976,
+            "offset_original": 1490631,
+            "offset_final": 1492585
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim01",
+            "kind": "is_copy",
+            "copy_index": 2,
+            "length": 1954,
+            "identity": 0.98976,
+            "offset_original": 2371935,
+            "offset_final": 2375843
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim01",
+            "kind": "cointegrate",
+            "copy_index": 3,
+            "length": 84979,
+            "identity": 0.99,
+            "offset_original": 4045563,
+            "offset_final": 4051425,
+            "cointegrated_slot": 2,
+            "plasmid_body_length": 81071,
+            "flank_length": 1954,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim02",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599625.1",
+      "chromosome_len": 4807977,
+      "n_plasmids": 4,
+      "composition": [
+        "small",
+        "small",
+        "medium",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim02_ref.fasta",
+      "isolate_seed": 20360812,
+      "plasmid_accessions": [
+        "NZ_CP051355.1",
+        "CP017388.1",
+        "CP114146.1",
+        "NZ_OW967976.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim03",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000599645.1",
+      "chromosome_len": 4875682,
+      "n_plasmids": 4,
+      "composition": [
+        "tiny",
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim03_ref.fasta",
+      "isolate_seed": 20360813,
+      "plasmid_accessions": [
+        "NZ_CP050864.1",
+        "AP022383.1",
+        "NC_009793.1",
+        "NZ_CP043379.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim04",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599665.1",
+      "chromosome_len": 5054509,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim04_ref.fasta",
+      "isolate_seed": 20360814,
+      "plasmid_accessions": [
+        "NZ_CP103506.1",
+        "NC_015515.1",
+        "LC567061.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim05",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000599685.1",
+      "chromosome_len": 4998910,
+      "n_plasmids": 2,
+      "composition": [
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim05_ref.fasta",
+      "isolate_seed": 20360815,
+      "plasmid_accessions": [
+        "NZ_CP075555.1",
+        "NZ_CP116096.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim06",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599705.1",
+      "chromosome_len": 5132153,
+      "n_plasmids": 4,
+      "composition": [
+        "small",
+        "small",
+        "medium",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim06_ref.fasta",
+      "isolate_seed": 20360816,
+      "plasmid_accessions": [
+        "NZ_CP097671.1",
+        "NZ_AP027751.1",
+        "NZ_CP035471.1",
+        "NZ_CP041434.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim06",
+        "family_length": 1066,
+        "family_source_offset_in_backbone": 2596997,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 2,
+        "slot_copies": {},
+        "cointegrate_slot": 2,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim06",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1066,
+            "identity": 0.98968,
+            "offset_original": 2438030,
+            "offset_final": 2438030
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim06",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1066,
+            "identity": 0.98968,
+            "offset_original": 3069339,
+            "offset_final": 3070405
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim06",
+            "kind": "cointegrate",
+            "copy_index": 2,
+            "length": 39579,
+            "identity": 0.99001,
+            "offset_original": 3294348,
+            "offset_final": 3296480,
+            "cointegrated_slot": 2,
+            "plasmid_body_length": 37447,
+            "flank_length": 1066,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim07",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000784925.1",
+      "chromosome_len": 5430912,
+      "n_plasmids": 4,
+      "composition": [
+        "tiny",
+        "small",
+        "small",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim07_ref.fasta",
+      "isolate_seed": 20360817,
+      "plasmid_accessions": [
+        "NZ_CP148491.1",
+        "NZ_AP019636.1",
+        "CP046889.1",
+        "NZ_CP098212.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim07",
+        "family_length": 1210,
+        "family_source_offset_in_backbone": 1761551,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 2,
+        "slot_copies": {},
+        "cointegrate_slot": 3,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim07",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1210,
+            "identity": 0.99008,
+            "offset_original": 1464234,
+            "offset_final": 1464234
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim07",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1210,
+            "identity": 0.99008,
+            "offset_original": 2595916,
+            "offset_final": 2597126
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim07",
+            "kind": "cointegrate",
+            "copy_index": 2,
+            "length": 117981,
+            "identity": 0.99,
+            "offset_original": 3241587,
+            "offset_final": 3244007,
+            "cointegrated_slot": 3,
+            "plasmid_body_length": 115561,
+            "flank_length": 1210,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim08",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000801165.1",
+      "chromosome_len": 4919174,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim08_ref.fasta",
+      "isolate_seed": 20360818,
+      "plasmid_accessions": [
+        "NC_025013.1",
+        "NZ_CP014660.1",
+        "CP139222.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim08",
+        "family_length": 1751,
+        "family_source_offset_in_backbone": 3981633,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 3,
+        "slot_copies": {},
+        "cointegrate_slot": 2,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim08",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1751,
+            "identity": 0.98972,
+            "offset_original": 598216,
+            "offset_final": 598216
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim08",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1751,
+            "identity": 0.98972,
+            "offset_original": 1570001,
+            "offset_final": 1571752
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim08",
+            "kind": "is_copy",
+            "copy_index": 2,
+            "length": 1751,
+            "identity": 0.98972,
+            "offset_original": 3522471,
+            "offset_final": 3525973
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim08",
+            "kind": "cointegrate",
+            "copy_index": 3,
+            "length": 86291,
+            "identity": 0.99,
+            "offset_original": 3803382,
+            "offset_final": 3808635,
+            "cointegrated_slot": 2,
+            "plasmid_body_length": 82789,
+            "flank_length": 1751,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim09",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000801185.2",
+      "chromosome_len": 4884464,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim09_ref.fasta",
+      "isolate_seed": 20360819,
+      "plasmid_accessions": [
+        "NZ_CP145178.1",
+        "NZ_MN276080.1",
+        "CP110593.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim10",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000814145.2",
+      "chromosome_len": 4761012,
+      "n_plasmids": 4,
+      "composition": [
+        "small",
+        "small",
+        "medium",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim10_ref.fasta",
+      "isolate_seed": 20360820,
+      "plasmid_accessions": [
+        "NC_017097.1",
+        "NZ_OP038270.1",
+        "NZ_CP097653.1",
+        "NZ_CP099410.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim11",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000597845.1",
+      "chromosome_len": 4758629,
+      "n_plasmids": 4,
+      "composition": [
+        "tiny",
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim11_ref.fasta",
+      "isolate_seed": 20360821,
+      "plasmid_accessions": [
+        "NZ_CP030001.1",
+        "NZ_CP011586.1",
+        "NZ_CP065127.1",
+        "NZ_LR883007.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim12",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599625.1",
+      "chromosome_len": 4807977,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim12_ref.fasta",
+      "isolate_seed": 20360822,
+      "plasmid_accessions": [
+        "NC_016834.1",
+        "CP052210.1",
+        "NZ_KU743383.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim13",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000599645.1",
+      "chromosome_len": 4875682,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim13_ref.fasta",
+      "isolate_seed": 20360823,
+      "plasmid_accessions": [
+        "NZ_CP091475.1",
+        "NZ_OP038303.1",
+        "CP099284.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim14",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599665.1",
+      "chromosome_len": 5054509,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "medium",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim14_ref.fasta",
+      "isolate_seed": 20360824,
+      "plasmid_accessions": [
+        "NZ_CP046965.1",
+        "CP061237.1",
+        "NZ_OU342903.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim15",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000599685.1",
+      "chromosome_len": 5081766,
+      "n_plasmids": 4,
+      "composition": [
+        "tiny",
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim15_ref.fasta",
+      "isolate_seed": 20360825,
+      "plasmid_accessions": [
+        "NZ_CP065086.1",
+        "NZ_CP151394.1",
+        "CP050838.1",
+        "NZ_OR388868.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim15",
+        "family_length": 1159,
+        "family_source_offset_in_backbone": 122941,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 2,
+        "slot_copies": {},
+        "cointegrate_slot": 3,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim15",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1159,
+            "identity": 0.98965,
+            "offset_original": 499995,
+            "offset_final": 499995
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim15",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1159,
+            "identity": 0.98965,
+            "offset_original": 2706442,
+            "offset_final": 2707601
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim15",
+            "kind": "cointegrate",
+            "copy_index": 2,
+            "length": 80538,
+            "identity": 0.99,
+            "offset_original": 4075430,
+            "offset_final": 4077748,
+            "cointegrated_slot": 3,
+            "plasmid_body_length": 78220,
+            "flank_length": 1159,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim16",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599705.1",
+      "chromosome_len": 5118014,
+      "n_plasmids": 4,
+      "composition": [
+        "small",
+        "small",
+        "medium",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim16_ref.fasta",
+      "isolate_seed": 20360826,
+      "plasmid_accessions": [
+        "CP125756.1",
+        "NZ_CP045679.1",
+        "CP088844.1",
+        "NZ_CP021835.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim16",
+        "family_length": 1972,
+        "family_source_offset_in_backbone": 1975941,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 2,
+        "slot_copies": {},
+        "cointegrate_slot": 2,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim16",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1972,
+            "identity": 0.98986,
+            "offset_original": 898928,
+            "offset_final": 898928
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim16",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1972,
+            "identity": 0.98986,
+            "offset_original": 1032303,
+            "offset_final": 1034275
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim16",
+            "kind": "cointegrate",
+            "copy_index": 2,
+            "length": 23628,
+            "identity": 0.98999,
+            "offset_original": 1133974,
+            "offset_final": 1137918,
+            "cointegrated_slot": 2,
+            "plasmid_body_length": 19684,
+            "flank_length": 1972,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim17",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000784925.1",
+      "chromosome_len": 5419398,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim17_ref.fasta",
+      "isolate_seed": 20360827,
+      "plasmid_accessions": [
+        "NZ_CP009772.1",
+        "NZ_CP109777.1",
+        "CP099135.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim17",
+        "family_length": 1946,
+        "family_source_offset_in_backbone": 985876,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 3,
+        "slot_copies": {},
+        "cointegrate_slot": 2,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim17",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1946,
+            "identity": 0.99024,
+            "offset_original": 1444098,
+            "offset_final": 1444098
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim17",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1946,
+            "identity": 0.99024,
+            "offset_original": 2151003,
+            "offset_final": 2152949
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim17",
+            "kind": "is_copy",
+            "copy_index": 2,
+            "length": 1946,
+            "identity": 0.99024,
+            "offset_original": 2561456,
+            "offset_final": 2565348
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim17",
+            "kind": "cointegrate",
+            "copy_index": 3,
+            "length": 103049,
+            "identity": 0.99,
+            "offset_original": 4700412,
+            "offset_final": 4706250,
+            "cointegrated_slot": 2,
+            "plasmid_body_length": 99157,
+            "flank_length": 1946,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim18",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000801165.1",
+      "chromosome_len": 4898288,
+      "n_plasmids": 2,
+      "composition": [
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim18_ref.fasta",
+      "isolate_seed": 20360828,
+      "plasmid_accessions": [
+        "NZ_CP157101.1",
+        "NZ_CP100504.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim18",
+        "family_length": 1446,
+        "family_source_offset_in_backbone": 809304,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 3,
+        "slot_copies": {},
+        "cointegrate_slot": 1,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim18",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1446,
+            "identity": 0.99032,
+            "offset_original": 329867,
+            "offset_final": 329867
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim18",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1446,
+            "identity": 0.99032,
+            "offset_original": 631015,
+            "offset_final": 632461
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim18",
+            "kind": "is_copy",
+            "copy_index": 2,
+            "length": 1446,
+            "identity": 0.99032,
+            "offset_original": 877154,
+            "offset_final": 880046
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim18",
+            "kind": "cointegrate",
+            "copy_index": 3,
+            "length": 66320,
+            "identity": 0.99,
+            "offset_original": 2420509,
+            "offset_final": 2424847,
+            "cointegrated_slot": 1,
+            "plasmid_body_length": 63428,
+            "flank_length": 1446,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim19",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000801185.2",
+      "chromosome_len": 4884464,
+      "n_plasmids": 4,
+      "composition": [
+        "tiny",
+        "small",
+        "small",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim19_ref.fasta",
+      "isolate_seed": 20360829,
+      "plasmid_accessions": [
+        "NZ_AP022408.1",
+        "NC_019113.1",
+        "NZ_CP101570.1",
+        "NZ_CP114355.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim20",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000814145.2",
+      "chromosome_len": 4814600,
+      "n_plasmids": 4,
+      "composition": [
+        "small",
+        "small",
+        "medium",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim20_ref.fasta",
+      "isolate_seed": 20360830,
+      "plasmid_accessions": [
+        "LC744476.1",
+        "NZ_CP058166.1",
+        "NZ_CP087572.1",
+        "NZ_KJ201886.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim20",
+        "family_length": 1857,
+        "family_source_offset_in_backbone": 4291735,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 2,
+        "slot_copies": {},
+        "cointegrate_slot": 2,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim20",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1857,
+            "identity": 0.98977,
+            "offset_original": 1258206,
+            "offset_final": 1258206
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim20",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1857,
+            "identity": 0.98977,
+            "offset_original": 4312547,
+            "offset_final": 4314404
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim20",
+            "kind": "cointegrate",
+            "copy_index": 2,
+            "length": 49874,
+            "identity": 0.98999,
+            "offset_original": 4690978,
+            "offset_final": 4694692,
+            "cointegrated_slot": 2,
+            "plasmid_body_length": 46160,
+            "flank_length": 1857,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim21",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000597845.1",
+      "chromosome_len": 4809643,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim21_ref.fasta",
+      "isolate_seed": 20360831,
+      "plasmid_accessions": [
+        "NZ_CP016009.1",
+        "NZ_CP131918.1",
+        "NZ_AP022529.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim21",
+        "family_length": 1653,
+        "family_source_offset_in_backbone": 3877120,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 2,
+        "slot_copies": {},
+        "cointegrate_slot": 2,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim21",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1653,
+            "identity": 0.98972,
+            "offset_original": 777004,
+            "offset_final": 777004
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim21",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1653,
+            "identity": 0.98972,
+            "offset_original": 1222131,
+            "offset_final": 1223784
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim21",
+            "kind": "cointegrate",
+            "copy_index": 2,
+            "length": 47708,
+            "identity": 0.99,
+            "offset_original": 1594490,
+            "offset_final": 1597796,
+            "cointegrated_slot": 2,
+            "plasmid_body_length": 44402,
+            "flank_length": 1653,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim22",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599625.1",
+      "chromosome_len": 4807977,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim22_ref.fasta",
+      "isolate_seed": 20360832,
+      "plasmid_accessions": [
+        "NZ_CP154431.1",
+        "NZ_CP157116.1",
+        "NZ_CP070900.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim23",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000599645.1",
+      "chromosome_len": 4875682,
+      "n_plasmids": 4,
+      "composition": [
+        "tiny",
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim23_ref.fasta",
+      "isolate_seed": 20360833,
+      "plasmid_accessions": [
+        "NZ_CP080176.1",
+        "CP052166.1",
+        "NZ_CP014101.1",
+        "NZ_CP077775.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim24",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599665.1",
+      "chromosome_len": 5225769,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim24_ref.fasta",
+      "isolate_seed": 20360834,
+      "plasmid_accessions": [
+        "NZ_CP045265.1",
+        "NZ_LS992179.1",
+        "JNBM01000002.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim24",
+        "family_length": 1745,
+        "family_source_offset_in_backbone": 2608550,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 3,
+        "slot_copies": {},
+        "cointegrate_slot": 2,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim24",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1745,
+            "identity": 0.99026,
+            "offset_original": 1287080,
+            "offset_final": 1287080
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim24",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1745,
+            "identity": 0.99026,
+            "offset_original": 3669481,
+            "offset_final": 3671226
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim24",
+            "kind": "is_copy",
+            "copy_index": 2,
+            "length": 1745,
+            "identity": 0.99026,
+            "offset_original": 3967044,
+            "offset_final": 3970534
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim24",
+            "kind": "cointegrate",
+            "copy_index": 3,
+            "length": 166025,
+            "identity": 0.99,
+            "offset_original": 4324217,
+            "offset_final": 4329452,
+            "cointegrated_slot": 2,
+            "plasmid_body_length": 162535,
+            "flank_length": 1745,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim25",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000599685.1",
+      "chromosome_len": 4998910,
+      "n_plasmids": 4,
+      "composition": [
+        "small",
+        "small",
+        "medium",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim25_ref.fasta",
+      "isolate_seed": 20360835,
+      "plasmid_accessions": [
+        "CP082614.1",
+        "NZ_CP147172.1",
+        "AP029164.1",
+        "CP088409.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim26",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599705.1",
+      "chromosome_len": 5159324,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim26_ref.fasta",
+      "isolate_seed": 20360836,
+      "plasmid_accessions": [
+        "NZ_MG800339.1",
+        "NZ_CP082022.1",
+        "CP021900.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim26",
+        "family_length": 1080,
+        "family_source_offset_in_backbone": 2970239,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 3,
+        "slot_copies": {},
+        "cointegrate_slot": 2,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim26",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1080,
+            "identity": 0.98981,
+            "offset_original": 430185,
+            "offset_final": 430185
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim26",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1080,
+            "identity": 0.98981,
+            "offset_original": 1741837,
+            "offset_final": 1742917
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim26",
+            "kind": "is_copy",
+            "copy_index": 2,
+            "length": 1080,
+            "identity": 0.98981,
+            "offset_original": 3107591,
+            "offset_final": 3109751
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim26",
+            "kind": "cointegrate",
+            "copy_index": 3,
+            "length": 65642,
+            "identity": 0.99,
+            "offset_original": 4303837,
+            "offset_final": 4307077,
+            "cointegrated_slot": 2,
+            "plasmid_body_length": 63482,
+            "flank_length": 1080,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim27",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000784925.1",
+      "chromosome_len": 5340366,
+      "n_plasmids": 4,
+      "composition": [
+        "small",
+        "small",
+        "medium",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim27_ref.fasta",
+      "isolate_seed": 20360837,
+      "plasmid_accessions": [
+        "CP090303.1",
+        "NZ_CP074547.1",
+        "CP031371.2",
+        "NZ_CP084875.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim27",
+        "family_length": 1602,
+        "family_source_offset_in_backbone": 745995,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 3,
+        "slot_copies": {},
+        "cointegrate_slot": 2,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim27",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1602,
+            "identity": 0.99001,
+            "offset_original": 953139,
+            "offset_final": 953139
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim27",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1602,
+            "identity": 0.99001,
+            "offset_original": 2114244,
+            "offset_final": 2115846
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim27",
+            "kind": "is_copy",
+            "copy_index": 2,
+            "length": 1602,
+            "identity": 0.99001,
+            "offset_original": 2159363,
+            "offset_final": 2162567
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim27",
+            "kind": "cointegrate",
+            "copy_index": 3,
+            "length": 25049,
+            "identity": 0.99002,
+            "offset_original": 3895387,
+            "offset_final": 3900193,
+            "cointegrated_slot": 2,
+            "plasmid_body_length": 21845,
+            "flank_length": 1602,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim28",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000801165.1",
+      "chromosome_len": 4827630,
+      "n_plasmids": 4,
+      "composition": [
+        "tiny",
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim28_ref.fasta",
+      "isolate_seed": 20360838,
+      "plasmid_accessions": [
+        "NZ_CP123259.1",
+        "NZ_ON107494.1",
+        "NZ_CP093462.1",
+        "NZ_CP142410.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim29",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000801185.2",
+      "chromosome_len": 4884464,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim29_ref.fasta",
+      "isolate_seed": 20360839,
+      "plasmid_accessions": [
+        "NZ_CP036303.1",
+        "NZ_CP028998.1",
+        "NZ_CP082095.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim30",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000814145.2",
+      "chromosome_len": 4761012,
+      "n_plasmids": 2,
+      "composition": [
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim30_ref.fasta",
+      "isolate_seed": 20360840,
+      "plasmid_accessions": [
+        "CP052548.1",
+        "NZ_CP077825.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim31",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000597845.1",
+      "chromosome_len": 4758629,
+      "n_plasmids": 4,
+      "composition": [
+        "small",
+        "small",
+        "medium",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim31_ref.fasta",
+      "isolate_seed": 20360841,
+      "plasmid_accessions": [
+        "NZ_CP067388.1",
+        "NZ_OR237796.1",
+        "NZ_CP102924.1",
+        "NZ_CP026173.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim32",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599625.1",
+      "chromosome_len": 5002409,
+      "n_plasmids": 4,
+      "composition": [
+        "tiny",
+        "small",
+        "small",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim32_ref.fasta",
+      "isolate_seed": 20360842,
+      "plasmid_accessions": [
+        "CP052508.1",
+        "NZ_CP024463.1",
+        "CP052424.1",
+        "NZ_CP034820.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim32",
+        "family_length": 1181,
+        "family_source_offset_in_backbone": 4765809,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 3,
+        "slot_copies": {},
+        "cointegrate_slot": 3,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim32",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1181,
+            "identity": 0.98984,
+            "offset_original": 1850479,
+            "offset_final": 1850479
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim32",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1181,
+            "identity": 0.98984,
+            "offset_original": 2062321,
+            "offset_final": 2063502
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim32",
+            "kind": "is_copy",
+            "copy_index": 2,
+            "length": 1181,
+            "identity": 0.98984,
+            "offset_original": 2654715,
+            "offset_final": 2657077
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim32",
+            "kind": "cointegrate",
+            "copy_index": 3,
+            "length": 190889,
+            "identity": 0.99,
+            "offset_original": 4545529,
+            "offset_final": 4549072,
+            "cointegrated_slot": 3,
+            "plasmid_body_length": 188527,
+            "flank_length": 1181,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim33",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000599645.1",
+      "chromosome_len": 4875682,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim33_ref.fasta",
+      "isolate_seed": 20360843,
+      "plasmid_accessions": [
+        "NZ_CP023647.1",
+        "NZ_CP116927.1",
+        "NZ_CP020856.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim34",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599665.1",
+      "chromosome_len": 5161675,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim34_ref.fasta",
+      "isolate_seed": 20360844,
+      "plasmid_accessions": [
+        "NZ_CP025464.1",
+        "NZ_CP142951.1",
+        "NZ_CP133876.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim34",
+        "family_length": 1823,
+        "family_source_offset_in_backbone": 4704064,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 3,
+        "slot_copies": {},
+        "cointegrate_slot": 1,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim34",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1823,
+            "identity": 0.99013,
+            "offset_original": 1619916,
+            "offset_final": 1619916
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim34",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1823,
+            "identity": 0.99013,
+            "offset_original": 1698133,
+            "offset_final": 1699956
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim34",
+            "kind": "is_copy",
+            "copy_index": 2,
+            "length": 1823,
+            "identity": 0.99013,
+            "offset_original": 3147182,
+            "offset_final": 3150828
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim34",
+            "kind": "cointegrate",
+            "copy_index": 3,
+            "length": 101697,
+            "identity": 0.99,
+            "offset_original": 4983528,
+            "offset_final": 4988997,
+            "cointegrated_slot": 1,
+            "plasmid_body_length": 98051,
+            "flank_length": 1823,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim35",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000599685.1",
+      "chromosome_len": 4998910,
+      "n_plasmids": 4,
+      "composition": [
+        "small",
+        "small",
+        "medium",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim35_ref.fasta",
+      "isolate_seed": 20360845,
+      "plasmid_accessions": [
+        "CP093141.1",
+        "NZ_CP097390.1",
+        "CP134900.1",
+        "NZ_CP120564.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim36",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599705.1",
+      "chromosome_len": 5090442,
+      "n_plasmids": 4,
+      "composition": [
+        "tiny",
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim36_ref.fasta",
+      "isolate_seed": 20360846,
+      "plasmid_accessions": [
+        "NC_019987.1",
+        "NZ_CP146568.1",
+        "NC_009345.1",
+        "NZ_LR890301.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim37",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000784925.1",
+      "chromosome_len": 5310511,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim37_ref.fasta",
+      "isolate_seed": 20360847,
+      "plasmid_accessions": [
+        "CP100068.1",
+        "NZ_CP079639.1",
+        "NZ_MT108208.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim38",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000801165.1",
+      "chromosome_len": 4827630,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim38_ref.fasta",
+      "isolate_seed": 20360848,
+      "plasmid_accessions": [
+        "NZ_CP128883.1",
+        "NZ_CP020845.1",
+        "NZ_CP126848.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim39",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000801185.2",
+      "chromosome_len": 4939652,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "medium",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim39_ref.fasta",
+      "isolate_seed": 20360849,
+      "plasmid_accessions": [
+        "CP052206.1",
+        "CP025972.1",
+        "NZ_CP073793.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim39",
+        "family_length": 1713,
+        "family_source_offset_in_backbone": 1498193,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 3,
+        "slot_copies": {},
+        "cointegrate_slot": 1,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim39",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1713,
+            "identity": 0.99008,
+            "offset_original": 373488,
+            "offset_final": 373488
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim39",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1713,
+            "identity": 0.99008,
+            "offset_original": 742713,
+            "offset_final": 744426
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim39",
+            "kind": "is_copy",
+            "copy_index": 2,
+            "length": 1713,
+            "identity": 0.99008,
+            "offset_original": 1544395,
+            "offset_final": 1547821
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim39",
+            "kind": "cointegrate",
+            "copy_index": 3,
+            "length": 50049,
+            "identity": 0.99,
+            "offset_original": 2275816,
+            "offset_final": 2280955,
+            "cointegrated_slot": 1,
+            "plasmid_body_length": 46623,
+            "flank_length": 1713,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim40",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000814145.2",
+      "chromosome_len": 4761012,
+      "n_plasmids": 4,
+      "composition": [
+        "tiny",
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim40_ref.fasta",
+      "isolate_seed": 20360850,
+      "plasmid_accessions": [
+        "NZ_CP107351.1",
+        "NZ_CP022017.1",
+        "NZ_CP122392.1",
+        "NZ_CP068313.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim41",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000597845.1",
+      "chromosome_len": 4758629,
+      "n_plasmids": 4,
+      "composition": [
+        "small",
+        "small",
+        "medium",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim41_ref.fasta",
+      "isolate_seed": 20360851,
+      "plasmid_accessions": [
+        "NZ_CP100673.1",
+        "NZ_CP083489.1",
+        "NZ_KU318420.1",
+        "NZ_CP124874.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim42",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599625.1",
+      "chromosome_len": 4807977,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim42_ref.fasta",
+      "isolate_seed": 20360852,
+      "plasmid_accessions": [
+        "CP052447.1",
+        "NC_019110.1",
+        "NZ_CP053694.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim43",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000599645.1",
+      "chromosome_len": 4965849,
+      "n_plasmids": 2,
+      "composition": [
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim43_ref.fasta",
+      "isolate_seed": 20360853,
+      "plasmid_accessions": [
+        "NZ_CP138425.1",
+        "NZ_CP146027.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim43",
+        "family_length": 1692,
+        "family_source_offset_in_backbone": 4092327,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 2,
+        "slot_copies": {},
+        "cointegrate_slot": 1,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim43",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1692,
+            "identity": 0.98995,
+            "offset_original": 3772815,
+            "offset_final": 3772815
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim43",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1692,
+            "identity": 0.98995,
+            "offset_original": 4088071,
+            "offset_final": 4089763
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim43",
+            "kind": "cointegrate",
+            "copy_index": 2,
+            "length": 86783,
+            "identity": 0.99,
+            "offset_original": 4466963,
+            "offset_final": 4470347,
+            "cointegrated_slot": 1,
+            "plasmid_body_length": 83399,
+            "flank_length": 1692,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim44",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599665.1",
+      "chromosome_len": 5054509,
+      "n_plasmids": 4,
+      "composition": [
+        "tiny",
+        "small",
+        "small",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim44_ref.fasta",
+      "isolate_seed": 20360854,
+      "plasmid_accessions": [
+        "NZ_CP064665.1",
+        "NZ_CP024574.1",
+        "NZ_CP074119.1",
+        "NZ_OW967520.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim45",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000599685.1",
+      "chromosome_len": 5086704,
+      "n_plasmids": 4,
+      "composition": [
+        "small",
+        "small",
+        "medium",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim45_ref.fasta",
+      "isolate_seed": 20360855,
+      "plasmid_accessions": [
+        "NZ_LT985230.1",
+        "NZ_CP093273.1",
+        "NZ_CP077430.1",
+        "CP069369.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim45",
+        "family_length": 1927,
+        "family_source_offset_in_backbone": 940319,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 3,
+        "slot_copies": {},
+        "cointegrate_slot": 2,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim45",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1927,
+            "identity": 0.99014,
+            "offset_original": 2314443,
+            "offset_final": 2314443
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim45",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1927,
+            "identity": 0.99014,
+            "offset_original": 2344208,
+            "offset_final": 2346135
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim45",
+            "kind": "is_copy",
+            "copy_index": 2,
+            "length": 1927,
+            "identity": 0.99014,
+            "offset_original": 2733056,
+            "offset_final": 2736910
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim45",
+            "kind": "cointegrate",
+            "copy_index": 3,
+            "length": 82013,
+            "identity": 0.98999,
+            "offset_original": 2807833,
+            "offset_final": 2813614,
+            "cointegrated_slot": 2,
+            "plasmid_body_length": 78159,
+            "flank_length": 1927,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim46",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000599705.1",
+      "chromosome_len": 5090442,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim46_ref.fasta",
+      "isolate_seed": 20360856,
+      "plasmid_accessions": [
+        "NZ_OP242224.1",
+        "CP052418.1",
+        "NZ_CP052880.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim47",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000784925.1",
+      "chromosome_len": 5310511,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim47_ref.fasta",
+      "isolate_seed": 20360857,
+      "plasmid_accessions": [
+        "NZ_MK330868.1",
+        "NZ_CP028782.2",
+        "NZ_CP116250.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    },
+    {
+      "isolate": "sim48",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000801165.1",
+      "chromosome_len": 4894344,
+      "n_plasmids": 4,
+      "composition": [
+        "tiny",
+        "small",
+        "small",
+        "medium"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim48_ref.fasta",
+      "isolate_seed": 20360858,
+      "plasmid_accessions": [
+        "NZ_CP145626.1",
+        "NZ_CP092719.1",
+        "NZ_CP146289.1",
+        "NZ_AP027973.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim48",
+        "family_length": 1680,
+        "family_source_offset_in_backbone": 2801459,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 3,
+        "slot_copies": {},
+        "cointegrate_slot": 3,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim48",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1680,
+            "identity": 0.98988,
+            "offset_original": 694803,
+            "offset_final": 694803
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim48",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1680,
+            "identity": 0.98988,
+            "offset_original": 1726768,
+            "offset_final": 1728448
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim48",
+            "kind": "is_copy",
+            "copy_index": 2,
+            "length": 1680,
+            "identity": 0.98988,
+            "offset_original": 3415499,
+            "offset_final": 3418859
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim48",
+            "kind": "cointegrate",
+            "copy_index": 3,
+            "length": 61674,
+            "identity": 0.99,
+            "offset_original": 4283400,
+            "offset_final": 4288440,
+            "cointegrated_slot": 3,
+            "plasmid_body_length": 58314,
+            "flank_length": 1680,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim49",
+      "arm": "r10_hq",
+      "chromosome": "GCF_000801185.2",
+      "chromosome_len": 5008332,
+      "n_plasmids": 3,
+      "composition": [
+        "small",
+        "small",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim49_ref.fasta",
+      "isolate_seed": 20360859,
+      "plasmid_accessions": [
+        "NZ_CP157114.1",
+        "NZ_CP015397.1",
+        "NZ_CP074172.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": {
+        "family_id": "IS_sim49",
+        "family_length": 1501,
+        "family_source_offset_in_backbone": 3737663,
+        "identity_target": 0.99,
+        "role": "absorb",
+        "chromosome_copies": 3,
+        "slot_copies": {},
+        "cointegrate_slot": 2,
+        "placements": [
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim49",
+            "kind": "is_copy",
+            "copy_index": 0,
+            "length": 1501,
+            "identity": 0.99001,
+            "offset_original": 231247,
+            "offset_final": 231247
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim49",
+            "kind": "is_copy",
+            "copy_index": 1,
+            "length": 1501,
+            "identity": 0.99001,
+            "offset_original": 2026545,
+            "offset_final": 2028046
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim49",
+            "kind": "is_copy",
+            "copy_index": 2,
+            "length": 1501,
+            "identity": 0.99001,
+            "offset_original": 4265400,
+            "offset_final": 4268402
+          },
+          {
+            "replicon": "chromosome",
+            "family": "IS_sim49",
+            "kind": "cointegrate",
+            "copy_index": 3,
+            "length": 119365,
+            "identity": 0.99,
+            "offset_original": 4498555,
+            "offset_final": 4503058,
+            "cointegrated_slot": 2,
+            "plasmid_body_length": 116363,
+            "flank_length": 1501,
+            "identity_is": "identity refers to the plasmid body"
+          }
+        ]
+      }
+    },
+    {
+      "isolate": "sim50",
+      "arm": "r9_raw",
+      "chromosome": "GCF_000814145.2",
+      "chromosome_len": 4761012,
+      "n_plasmids": 4,
+      "composition": [
+        "small",
+        "small",
+        "medium",
+        "large"
+      ],
+      "ref": "D:\\Plasmid-GNN\\DNA_Sequencing_Technology\\work\\sim\\sim50_ref.fasta",
+      "isolate_seed": 20360860,
+      "plasmid_accessions": [
+        "NZ_CP135675.1",
+        "NZ_CP028788.2",
+        "NZ_CP087643.1",
+        "NZ_CP059837.1"
+      ],
+      "slots_out_of_band": 0,
+      "repeat_structure": null
+    }
+  ]
+}

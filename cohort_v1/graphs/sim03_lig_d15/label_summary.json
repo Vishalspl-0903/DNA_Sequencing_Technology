@@ -1,0 +1,13 @@
+{
+  "asm_dir": "/mnt/d/DNA-Sequencing/work/asm/sim03_lig_d15",
+  "n_segments": 37,
+  "n_links": 57,
+  "n_plasmids": 4,
+  "labels": {
+    "recovered": 3,
+    "absent": 1
+  },
+  "n_missing_for_graph_head": 1,
+  "paf_blocks": 6,
+  "paf_blocks_passing_identity": 6
+}

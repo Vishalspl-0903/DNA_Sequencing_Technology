@@ -1,0 +1,13 @@
+plasmid_name,ladder,plasmid_acc,plasmid_len,copy_number,repeat_len,repeat_copies
+ladderA_05kb,A,NZ_CP125129.1,5010,15,0,0
+ladderA_06kb,A,NZ_OP242311.1,6024,15,0,0
+ladderA_07kb,A,CP057514.1,6930,15,0,0
+ladderA_08kb,A,NZ_ON209486.1,7980,15,0,0
+ladderA_09kb,A,NZ_OP009360.1,9083,15,0,0
+ladderA_10kb,A,NZ_CP134045.1,10046,15,0,0
+ladderA_11kb,A,NZ_CP154277.1,11189,15,0,0
+ladderA_12kb,A,NZ_MW598236.1,11970,15,0,0
+ladderB_rep03kb,B,NC_021813.2,116363,2,3000,2
+ladderB_rep08kb,B,CP014577.1,109930,2,8000,2
+ladderB_rep15kb,B,NZ_CP027130.1,200292,2,15000,2
+ladderB_rep25kb,B,NZ_AP019818.1,186816,2,25000,2

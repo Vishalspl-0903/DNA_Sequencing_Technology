@@ -1,0 +1,158 @@
+{
+ "seed": 20260815,
+ "chromosome": "GCF_000597845.1",
+ "chromosome_len": 4921629,
+ "placements": [
+  {
+   "plasmid": "c1_len15_n2_id990",
+   "family_src": 735051,
+   "repeat_len": 15000,
+   "identity": 0.99,
+   "in_plasmid": [
+    {
+     "at": 64531,
+     "len": 15000
+    },
+    {
+     "at": 24565,
+     "len": 15000
+    }
+   ],
+   "in_chrom": [
+    1746301,
+    2850064
+   ]
+  },
+  {
+   "plasmid": "c2_len15_n2_id1000",
+   "family_src": 3864435,
+   "repeat_len": 15000,
+   "identity": 1.0,
+   "in_plasmid": [
+    {
+     "at": 61878,
+     "len": 15000
+    },
+    {
+     "at": 28305,
+     "len": 15000
+    }
+   ],
+   "in_chrom": [
+    1788851,
+    2984768
+   ]
+  },
+  {
+   "plasmid": "c3_len15_n3_id1000",
+   "family_src": 1206202,
+   "repeat_len": 15000,
+   "identity": 1.0,
+   "in_plasmid": [
+    {
+     "at": 107704,
+     "len": 15000
+    },
+    {
+     "at": 61202,
+     "len": 15000
+    },
+    {
+     "at": 34393,
+     "len": 15000
+    }
+   ],
+   "in_chrom": [
+    1482179,
+    3507155
+   ]
+  },
+  {
+   "plasmid": "c4_len25_n2_id1000",
+   "family_src": 4324741,
+   "repeat_len": 25000,
+   "identity": 1.0,
+   "in_plasmid": [
+    {
+     "at": 88978,
+     "len": 25000
+    },
+    {
+     "at": 57551,
+     "len": 25000
+    }
+   ],
+   "in_chrom": [
+    1433808,
+    3244762
+   ]
+  },
+  {
+   "plasmid": "c5_len05_n4_id1000",
+   "family_src": 208645,
+   "repeat_len": 5000,
+   "identity": 1.0,
+   "in_plasmid": [
+    {
+     "at": 47988,
+     "len": 5000
+    },
+    {
+     "at": 35544,
+     "len": 5000
+    },
+    {
+     "at": 25351,
+     "len": 5000
+    },
+    {
+     "at": 12664,
+     "len": 5000
+    }
+   ],
+   "in_chrom": [
+    1312685,
+    2528549,
+    3370578
+   ]
+  },
+  {
+   "plasmid": "c6_len02_n6_id1000",
+   "family_src": 343842,
+   "repeat_len": 2000,
+   "identity": 1.0,
+   "in_plasmid": [
+    {
+     "at": 28887,
+     "len": 2000
+    },
+    {
+     "at": 24336,
+     "len": 2000
+    },
+    {
+     "at": 19760,
+     "len": 2000
+    },
+    {
+     "at": 16358,
+     "len": 2000
+    },
+    {
+     "at": 11249,
+     "len": 2000
+    },
+    {
+     "at": 7955,
+     "len": 2000
+    }
+   ],
+   "in_chrom": [
+    1047740,
+    1971725,
+    2859496,
+    3564247
+   ]
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+  "asm_dir": "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work/probe2/asm/probe02_rap_d15",
+  "n_segments": 9,
+  "n_links": 13,
+  "n_plasmids": 6,
+  "labels": {
+    "recovered": 6
+  },
+  "n_missing_for_graph_head": 0,
+  "paf_blocks": 12,
+  "paf_blocks_passing_identity": 12
+}

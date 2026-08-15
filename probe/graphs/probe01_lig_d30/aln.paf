@@ -1,0 +1,26 @@
+ladderA_07kb	6930	845	1234	-	edge_6	19321	2514	2904	387	390	60	NM:i:3	ms:i:307	AS:i:307	nn:i:0	tp:A:P	cm:i:30	s1:i:345	s2:i:132	de:f:0.0077	zd:i:1	rl:i:0	cg:Z:65M1D324M
+ladderA_08kb	7980	1957	2318	+	edge_6	19321	2532	2894	358	362	41	NM:i:4	ms:i:259	AS:i:259	nn:i:0	tp:A:P	cm:i:27	s1:i:331	s2:i:269	de:f:0.0110	rl:i:0	cg:Z:45M1D316M
+ladderA_09kb	9083	66	1254	-	edge_2	4759332	499057	500245	1186	1188	0	NM:i:2	ms:i:1148	AS:i:1148	nn:i:0	tp:A:P	cm:i:110	s1:i:1158	s2:i:1158	de:f:0.0017	rl:i:0	cg:Z:1188M
+ladderA_09kb	9083	66	1254	-	edge_8	4197327	5	1193	1186	1188	0	NM:i:2	ms:i:1148	AS:i:1148	nn:i:0	tp:A:S	cm:i:110	s1:i:1158	de:f:0.0017	rl:i:0	cg:Z:1188M
+ladderA_09kb	9083	7944	9083	-	edge_2	4759332	4636924	4638065	1136	1141	0	NM:i:5	ms:i:995	AS:i:995	nn:i:0	tp:A:P	cm:i:106	s1:i:1018	s2:i:1018	de:f:0.0044	rl:i:0	cg:Z:177M1D381M1D581M
+ladderA_09kb	9083	7944	9083	-	edge_8	4197327	4137872	4139013	1136	1141	0	NM:i:5	ms:i:995	AS:i:995	nn:i:0	tp:A:S	cm:i:106	s1:i:1018	de:f:0.0044	rl:i:0	cg:Z:177M1D381M1D581M
+ladderA_09kb	9083	3966	4545	+	edge_2	4759332	4695793	4696372	579	579	0	NM:i:0	ms:i:579	AS:i:579	nn:i:0	tp:A:P	cm:i:52	s1:i:561	s2:i:561	de:f:0	rl:i:0	cg:Z:579M
+ladderA_09kb	9083	3966	4545	+	edge_8	4197327	4196741	4197320	579	579	0	NM:i:0	ms:i:579	AS:i:579	nn:i:0	tp:A:S	cm:i:52	s1:i:561	de:f:0	rl:i:0	cg:Z:579M
+ladderA_09kb	9083	7120	7544	-	edge_8	4197327	2926390	2926814	420	424	0	NM:i:4	ms:i:344	AS:i:344	nn:i:0	tp:A:P	cm:i:35	s1:i:365	s2:i:365	de:f:0.0094	rl:i:0	cg:Z:424M
+ladderA_09kb	9083	7120	7544	-	edge_2	4759332	3425442	3425866	420	424	0	NM:i:4	ms:i:344	AS:i:344	nn:i:0	tp:A:S	cm:i:35	s1:i:365	de:f:0.0094	rl:i:0	cg:Z:424M
+ladderA_09kb	9083	7172	7544	-	edge_8	4197327	2967768	2968140	368	372	0	NM:i:4	ms:i:292	AS:i:292	nn:i:0	tp:A:S	cm:i:30	s1:i:321	de:f:0.0108	rl:i:0	cg:Z:372M
+ladderA_09kb	9083	7172	7544	-	edge_2	4759332	3466820	3467192	368	372	0	NM:i:4	ms:i:292	AS:i:292	nn:i:0	tp:A:S	cm:i:30	s1:i:321	de:f:0.0108	rl:i:0	cg:Z:372M
+ladderA_10kb	10046	4835	6444	-	edge_11	11980	1745	5264	1599	3519	60	NM:i:1920	ms:i:1377	AS:i:-582	nn:i:0	tp:A:P	cm:i:137	s1:i:1392	s2:i:155	de:f:0.0068	zd:i:3	rl:i:0	cg:Z:1445M1910D164M
+ladderA_10kb	10046	6974	8189	-	edge_11	11980	0	1215	1198	1215	60	NM:i:17	ms:i:925	AS:i:875	nn:i:0	tp:A:P	cm:i:93	s1:i:944	s2:i:155	de:f:0.0140	zd:i:1	rl:i:0	cg:Z:1215M
+ladderA_11kb	11189	625	11189	+	edge_6	19321	5270	15833	10563	10564	60	NM:i:1	ms:i:10521	AS:i:10521	nn:i:0	tp:A:P	cm:i:1029	s1:i:10586	s2:i:9039	de:f:0.0001	zd:i:2	rl:i:0	cg:Z:111M1I10452M
+ladderA_11kb	11189	0	9056	+	edge_6	19321	10240	19296	9056	9056	0	NM:i:0	ms:i:9056	AS:i:9056	nn:i:0	tp:A:S	cm:i:887	s1:i:9039	de:f:0	rl:i:0	cg:Z:9056M
+ladderA_12kb	11970	281	11970	-	edge_11	11980	281	11980	11669	11699	60	NM:i:30	ms:i:10869	AS:i:10869	nn:i:0	tp:A:P	cm:i:1116	s1:i:11385	s2:i:136	de:f:0.0026	rl:i:0	cg:Z:1060M1D190M1D213M1D3619M1D2832M1D911M1D303M1D647M1D349M1D1100M1D465M
+ladderA_12kb	11970	0	281	-	edge_11	11980	0	281	280	281	60	NM:i:1	ms:i:261	AS:i:261	nn:i:0	tp:A:P	cm:i:25	s1:i:244	s2:i:0	de:f:0.0036	rl:i:0	cg:Z:281M
+ladderB_rep03kb	116363	31495	116363	-	edge_7	116357	31489	116357	84868	84868	60	NM:i:0	ms:i:84868	AS:i:84868	nn:i:0	tp:A:P	cm:i:8434	s1:i:84849	s2:i:3857	de:f:0	rl:i:0	cg:Z:84868M
+ladderB_rep03kb	116363	0	31489	-	edge_7	116357	0	31489	31489	31489	60	NM:i:0	ms:i:31489	AS:i:31489	nn:i:0	tp:A:P	cm:i:3110	s1:i:31479	s2:i:64	de:f:0	rl:i:0	cg:Z:31489M
+ladderB_rep08kb	109930	0	74915	-	edge_10	109929	0	74914	74914	74915	60	NM:i:1	ms:i:74872	AS:i:74872	nn:i:0	tp:A:P	cm:i:7461	s1:i:74900	s2:i:6856	de:f:0.0000	rl:i:0	cg:Z:73993M1I921M
+ladderB_rep08kb	109930	74915	109930	-	edge_10	109929	74914	109929	35015	35015	60	NM:i:0	ms:i:35015	AS:i:35015	nn:i:0	tp:A:P	cm:i:3492	s1:i:35007	s2:i:973	de:f:0	rl:i:0	cg:Z:35015M
+ladderB_rep15kb	200292	0	117351	-	edge_3	200291	0	117351	117351	117351	60	NM:i:0	ms:i:117351	AS:i:117351	nn:i:0	tp:A:P	cm:i:11504	s1:i:115228	s2:i:25970	de:f:0	rl:i:3852	cg:Z:117351M
+ladderB_rep15kb	200292	117352	200292	-	edge_3	200291	117351	200291	82940	82940	60	NM:i:0	ms:i:82940	AS:i:82940	nn:i:0	tp:A:P	cm:i:8211	s1:i:81706	s2:i:33888	de:f:0	rl:i:3852	cg:Z:82940M
+ladderB_rep25kb	186816	0	140553	-	edge_5	186827	0	140554	140553	140554	60	NM:i:1	ms:i:140511	AS:i:140511	nn:i:0	tp:A:P	cm:i:14061	s1:i:140523	s2:i:21539	de:f:0.0000	rl:i:50	cg:Z:2323M1D138230M
+ladderB_rep25kb	186816	140543	186816	-	edge_5	186827	140554	186827	46273	46273	60	NM:i:0	ms:i:46273	AS:i:46273	nn:i:0	tp:A:P	cm:i:4567	s1:i:46267	s2:i:3699	de:f:0	rl:i:50	cg:Z:46273M

@@ -1,0 +1,16 @@
+ladderA_07kb	6930	625	2601	-	edge_4	22668	7786	9762	1976	1976	60	NM:i:0	ms:i:1976	AS:i:1976	nn:i:0	tp:A:P	cm:i:202	s1:i:1955	s2:i:1141	de:f:0	rl:i:0	cg:Z:1976M
+ladderA_08kb	7980	516	2556	+	edge_4	22668	5746	7786	2040	2040	60	NM:i:0	ms:i:2040	AS:i:2040	nn:i:0	tp:A:P	cm:i:200	s1:i:2027	s2:i:565	de:f:0	rl:i:0	cg:Z:2040M
+ladderA_09kb	9083	375	9083	+	edge_10	9083	0	8708	8708	8708	60	NM:i:0	ms:i:8708	AS:i:8708	nn:i:0	tp:A:P	cm:i:881	s1:i:8685	s2:i:1172	de:f:0	rl:i:0	cg:Z:8708M
+ladderA_09kb	9083	0	375	+	edge_10	9083	8708	9083	375	375	60	NM:i:0	ms:i:375	AS:i:375	nn:i:0	tp:A:P	cm:i:37	s1:i:350	s2:i:0	de:f:0	rl:i:0	cg:Z:375M
+ladderA_10kb	10046	0	10046	+	edge_11	20079	7784	17830	10046	10046	60	NM:i:0	ms:i:10046	AS:i:10046	nn:i:0	tp:A:P	cm:i:1009	s1:i:10018	s2:i:7234	de:f:0	rl:i:0	cg:Z:10046M
+ladderA_11kb	11189	0	11189	+	edge_4	22668	11270	22456	11186	11189	60	NM:i:3	ms:i:11141	AS:i:11138	nn:i:0	tp:A:P	cm:i:1091	s1:i:11159	s2:i:7778	de:f:0.0001	rl:i:0	cg:Z:5593M3I5593M
+ladderA_12kb	11970	3919	11970	+	edge_5	11970	0	8051	8051	8051	60	NM:i:0	ms:i:8051	AS:i:8051	nn:i:0	tp:A:P	cm:i:791	s1:i:8036	s2:i:3564	de:f:0	rl:i:0	cg:Z:8051M
+ladderA_12kb	11970	0	3919	+	edge_5	11970	8051	11970	3919	3919	60	NM:i:0	ms:i:3919	AS:i:3919	nn:i:0	tp:A:P	cm:i:395	s1:i:3897	s2:i:1518	de:f:0	rl:i:0	cg:Z:3919M
+ladderB_rep03kb	116363	22808	116363	-	edge_8	116363	22808	116363	93555	93555	60	NM:i:0	ms:i:93555	AS:i:93555	nn:i:0	tp:A:P	cm:i:9297	s1:i:93537	s2:i:3857	de:f:0	rl:i:0	cg:Z:93555M
+ladderB_rep03kb	116363	0	22808	-	edge_8	116363	0	22808	22808	22808	60	NM:i:0	ms:i:22808	AS:i:22808	nn:i:0	tp:A:P	cm:i:2247	s1:i:22786	s2:i:64	de:f:0	rl:i:0	cg:Z:22808M
+ladderB_rep08kb	109930	0	85315	-	edge_6	109930	0	85315	85315	85315	60	NM:i:0	ms:i:85315	AS:i:85315	nn:i:0	tp:A:P	cm:i:8499	s1:i:85306	s2:i:6856	de:f:0	rl:i:0	cg:Z:85315M
+ladderB_rep08kb	109930	85315	109930	-	edge_6	109930	85315	109930	24615	24615	60	NM:i:0	ms:i:24615	AS:i:24615	nn:i:0	tp:A:P	cm:i:2456	s1:i:24610	s2:i:1129	de:f:0	rl:i:0	cg:Z:24615M
+ladderB_rep15kb	200292	0	117329	+	edge_3	200291	82962	200291	117329	117329	60	NM:i:0	ms:i:117329	AS:i:117329	nn:i:0	tp:A:P	cm:i:11740	s1:i:117306	s2:i:12937	de:f:0	rl:i:38	cg:Z:117329M
+ladderB_rep15kb	200292	117330	200292	+	edge_3	200291	0	82962	82962	82962	60	NM:i:0	ms:i:82962	AS:i:82962	nn:i:0	tp:A:P	cm:i:8351	s1:i:82944	s2:i:31181	de:f:0	rl:i:38	cg:Z:82962M
+ladderB_rep25kb	186816	0	115541	+	edge_1	186821	71281	186821	115540	115541	60	NM:i:1	ms:i:115498	AS:i:115498	nn:i:0	tp:A:P	cm:i:11490	s1:i:115508	s2:i:21311	de:f:0.0000	rl:i:38	cg:Z:111635M1I3905M
+ladderB_rep25kb	186816	115533	186816	+	edge_1	186821	0	71281	71281	71283	60	NM:i:2	ms:i:71197	AS:i:71197	nn:i:0	tp:A:P	cm:i:7136	s1:i:71240	s2:i:24941	de:f:0.0000	rl:i:38	cg:Z:897M1I53969M1I16415M

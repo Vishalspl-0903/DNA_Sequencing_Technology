@@ -1,0 +1,7 @@
+{"isolate":"sim22","tag":"sim22_rap_d15","arm":"r9_raw","prep":"rap",
+ "depth_fraction_x":15,"fragment_length":"15000,13000",
+ "badread_seed":20263036,"badread_error_model":"nanopore2020",
+ "badread_qscore_model":"nanopore2020",
+ "flye_mode":"--nano-raw","threads":6,"read_bases":75789699,
+ "seconds_flye":208,"small_plasmid_bias":false,
+ "n_segments":4,"flye_version":"2.9.6-b1802"}

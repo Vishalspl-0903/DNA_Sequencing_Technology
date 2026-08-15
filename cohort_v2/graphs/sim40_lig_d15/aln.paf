@@ -1,0 +1,2 @@
+plasmid_3	17726	0	16602	+	edge_2	17726	1124	17726	16602	16602	60	NM:i:0	ms:i:16602	AS:i:16602	nn:i:0	tp:A:P	cm:i:1643	s1:i:16591	s2:i:88	de:f:0	rl:i:0	cg:Z:16602M
+plasmid_3	17726	16602	17726	+	edge_2	17726	0	1124	1124	1124	60	NM:i:0	ms:i:1124	AS:i:1124	nn:i:0	tp:A:P	cm:i:109	s1:i:1112	s2:i:0	de:f:0	rl:i:0	cg:Z:1124M

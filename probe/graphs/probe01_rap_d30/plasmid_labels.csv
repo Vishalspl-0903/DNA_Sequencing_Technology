@@ -1,0 +1,13 @@
+plasmid,plasmid_len,label,best_segment,best_cov_frac,best_segment_len,cumulative_cov_frac,n_support,support
+ladderA_05kb,5010,absent,,0.0,0,0.0,0,
+ladderA_06kb,6024,absent,,0.0,0,0.0,0,
+ladderA_07kb,6930,absent,edge_4,0.2851,22668,0.2851,1,edge_4
+ladderA_08kb,7980,absent,edge_4,0.2556,22668,0.2556,1,edge_4
+ladderA_09kb,9083,recovered,edge_10,1.0,9083,1.0,1,edge_10
+ladderA_10kb,10046,recovered,edge_11,1.0,20079,1.0,1,edge_11
+ladderA_11kb,11189,recovered,edge_4,1.0,22668,1.0,1,edge_4
+ladderA_12kb,11970,recovered,edge_5,1.0,11970,1.0,1,edge_5
+ladderB_rep03kb,116363,recovered,edge_8,1.0,116363,1.0,1,edge_8
+ladderB_rep08kb,109930,recovered,edge_6,1.0,109930,1.0,1,edge_6
+ladderB_rep15kb,200292,recovered,edge_3,1.0,200291,1.0,1,edge_3
+ladderB_rep25kb,186816,recovered,edge_1,1.0,186821,1.0,1,edge_1

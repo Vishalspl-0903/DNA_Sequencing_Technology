@@ -1,0 +1,109 @@
+==================================================================
+COHORT v2 -- 50 isolates x {lig,rap} x {30x,15x} = 200 assemblies
+==================================================================
+
+A) chromosome backbones
+------------------------------------------------------------------
+  GCF_000597845.1  chromosome   4758629 bp  (1 records in file, 0 discarded)
+  GCF_000599625.1  chromosome   4807977 bp  (1 records in file, 0 discarded)
+  GCF_000599645.1  chromosome   4875682 bp  (1 records in file, 0 discarded)
+  GCF_000599665.1  chromosome   5054509 bp  (1 records in file, 0 discarded)
+  GCF_000599685.1  chromosome   4998910 bp  (1 records in file, 0 discarded)
+  GCF_000599705.1  chromosome   5090442 bp  (1 records in file, 0 discarded)
+  GCF_000784925.1  chromosome   5310511 bp  (4 records in file, 3 discarded)
+  GCF_000801165.1  chromosome   4827630 bp  (2 records in file, 1 discarded)
+  GCF_000801185.2  chromosome   4884464 bp  (2 records in file, 1 discarded)
+  GCF_000814145.2  chromosome   4761012 bp  (3 records in file, 2 discarded)
+  -> 10 usable backbones (each reused across 5 isolates, with
+     independent repeat injection, so no two references are identical)
+
+B) plasmid pool
+------------------------------------------------------------------
+  candidates (Enterobacterales, post-filter):
+     tiny    [1000, 4000)       3175
+     small   [4000, 12000)      4990
+     medium  [12000, 100000)    11215
+     large   [100000, 500000)   10906
+  selected 800 accessions; extracting sequences...
+  extracted 800 / 800
+  -> D:\Plasmid-GNN\DNA_Sequencing_Technology\work\refs\plasmid_pool.fasta
+
+C) per-isolate references
+------------------------------------------------------------------
+  draw required / available:
+     tiny     28 / 200
+     small    64 / 200
+     medium   54 / 200
+     large    28 / 200
+  sim01 arm=r10_hq  chrom=GCF_000597845.1 3 plasmids (tiny,small,medium)
+  sim02 arm=r9_raw  chrom=GCF_000599625.1 3 plasmids (small,medium,large)
+  sim03 arm=r10_hq  chrom=GCF_000599645.1 4 plasmids (tiny,small,small,medium)  repeats=frag/1225bp
+  sim04 arm=r9_raw  chrom=GCF_000599665.1 4 plasmids (small,medium,medium,large)
+  sim05 arm=r10_hq  chrom=GCF_000599685.1 4 plasmids (tiny,small,medium,large)  repeats=absorb/1562bp
+  sim06 arm=r9_raw  chrom=GCF_000599705.1 2 plasmids (small,medium)
+  sim07 arm=r10_hq  chrom=GCF_000784925.1 5 plasmids (tiny,small,small,medium,large)  repeats=frag/1210bp
+  sim08 arm=r9_raw  chrom=GCF_000801165.1 2 plasmids (small,large)  repeats=frag/1751bp
+  sim09 arm=r10_hq  chrom=GCF_000801185.2 4 plasmids (tiny,small,medium,medium)  repeats=absorb/1230bp
+  sim10 arm=r9_raw  chrom=GCF_000814145.2 3 plasmids (small,small,medium)
+  sim11 arm=r10_hq  chrom=GCF_000597845.1 3 plasmids (tiny,small,large)  repeats=frag/1288bp
+  sim12 arm=r9_raw  chrom=GCF_000599625.1 3 plasmids (small,medium,large)
+  sim13 arm=r10_hq  chrom=GCF_000599645.1 4 plasmids (tiny,tiny,small,medium)
+  sim14 arm=r9_raw  chrom=GCF_000599665.1 4 plasmids (small,small,medium,large)
+  sim15 arm=r10_hq  chrom=GCF_000599685.1 3 plasmids (tiny,small,medium)
+  sim16 arm=r9_raw  chrom=GCF_000599705.1 3 plasmids (small,medium,medium)
+  sim17 arm=r10_hq  chrom=GCF_000784925.1 4 plasmids (tiny,small,small,large)
+  sim18 arm=r9_raw  chrom=GCF_000801165.1 3 plasmids (small,medium,large)  repeats=absorb/1446bp
+  sim19 arm=r10_hq  chrom=GCF_000801185.2 4 plasmids (tiny,small,medium,large)
+  sim20 arm=r9_raw  chrom=GCF_000814145.2 4 plasmids (small,small,medium,medium)  repeats=frag/1857bp
+  sim21 arm=r10_hq  chrom=GCF_000597845.1 3 plasmids (tiny,small,medium)  repeats=absorb/1653bp
+  sim22 arm=r9_raw  chrom=GCF_000599625.1 3 plasmids (small,medium,large)
+  sim23 arm=r10_hq  chrom=GCF_000599645.1 4 plasmids (tiny,small,small,medium)
+  sim24 arm=r9_raw  chrom=GCF_000599665.1 4 plasmids (small,medium,medium,large)  repeats=absorb/1745bp
+  sim25 arm=r10_hq  chrom=GCF_000599685.1 4 plasmids (tiny,small,medium,large)  repeats=frag/1018bp
+  sim26 arm=r9_raw  chrom=GCF_000599705.1 3 plasmids (tiny,small,medium)  repeats=frag/1080bp
+  sim27 arm=r10_hq  chrom=GCF_000784925.1 3 plasmids (small,medium,large)
+  sim28 arm=r9_raw  chrom=GCF_000801165.1 4 plasmids (tiny,small,small,medium)
+  sim29 arm=r10_hq  chrom=GCF_000801185.2 4 plasmids (small,medium,medium,large)  repeats=absorb/1309bp
+  sim30 arm=r9_raw  chrom=GCF_000814145.2 4 plasmids (tiny,small,medium,large)
+  sim31 arm=r10_hq  chrom=GCF_000597845.1 2 plasmids (small,medium)
+  sim32 arm=r9_raw  chrom=GCF_000599625.1 5 plasmids (tiny,small,small,medium,large)  repeats=absorb/1181bp
+  sim33 arm=r10_hq  chrom=GCF_000599645.1 2 plasmids (small,large)
+  sim34 arm=r9_raw  chrom=GCF_000599665.1 4 plasmids (tiny,small,medium,medium)  repeats=frag/1823bp
+  sim35 arm=r10_hq  chrom=GCF_000599685.1 3 plasmids (small,small,medium)
+  sim36 arm=r9_raw  chrom=GCF_000599705.1 3 plasmids (tiny,small,large)  repeats=absorb/1027bp
+  sim37 arm=r10_hq  chrom=GCF_000784925.1 3 plasmids (small,medium,large)
+  sim38 arm=r9_raw  chrom=GCF_000801165.1 4 plasmids (tiny,tiny,small,medium)  repeats=frag/1799bp
+  sim39 arm=r10_hq  chrom=GCF_000801185.2 4 plasmids (small,small,medium,large)  repeats=frag/1713bp
+  sim40 arm=r9_raw  chrom=GCF_000814145.2 3 plasmids (tiny,small,medium)
+  sim41 arm=r10_hq  chrom=GCF_000597845.1 3 plasmids (small,medium,medium)
+  sim42 arm=r9_raw  chrom=GCF_000599625.1 4 plasmids (tiny,small,small,large)  repeats=absorb/1455bp
+  sim43 arm=r10_hq  chrom=GCF_000599645.1 3 plasmids (small,medium,large)
+  sim44 arm=r9_raw  chrom=GCF_000599665.1 4 plasmids (tiny,small,medium,large)
+  sim45 arm=r10_hq  chrom=GCF_000599685.1 4 plasmids (small,small,medium,medium)
+  sim46 arm=r9_raw  chrom=GCF_000599705.1 3 plasmids (tiny,small,medium)
+  sim47 arm=r10_hq  chrom=GCF_000784925.1 3 plasmids (small,medium,large)  repeats=absorb/1164bp
+  sim48 arm=r9_raw  chrom=GCF_000801165.1 4 plasmids (tiny,small,small,medium)
+  sim49 arm=r10_hq  chrom=GCF_000801185.2 4 plasmids (small,medium,medium,large)
+  sim50 arm=r9_raw  chrom=GCF_000814145.2 4 plasmids (tiny,small,medium,large)
+
+==================================================================
+COHORT SUMMARY
+==================================================================
+  isolates                 : 50  (200 assemblies at 4 cells each)
+  plasmid label units      : 174  (x4 cells = 696)
+  strata (realised)        : {'tiny': 28, 'small': 64, 'medium': 54, 'large': 28}
+  analysis sets            : {'deterministic_tiny': 28, 'interventional': 146}
+  interventional units     : 146  (x4 cells = 584)
+  arms                     : {'r10_hq': 25, 'r9_raw': 25}
+  repeat isolates          : 20  roles={'frag': 10, 'absorb': 10}
+  plasmids carrying IS     : 20
+  cointegrated plasmids    : 10   <- the 'absorbed' candidates
+  slots drawn out of band  : 0
+
+  EXPECTED-CLASS CHECK (floors are enforced later, in 09_report.py):
+    absorbed floor is 20 and there are 10 cointegrates -- one per
+    absorb-role isolate, each seen in all 4 cells.
+    fragmented floor is 20 and 20 plasmids carry dispersed IS copies.
+
+  -> D:\Plasmid-GNN\DNA_Sequencing_Technology\work\sim\ground_truth.csv
+  -> D:\Plasmid-GNN\DNA_Sequencing_Technology\work\sim\designs.json

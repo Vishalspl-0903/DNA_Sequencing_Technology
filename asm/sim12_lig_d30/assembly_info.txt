@@ -1,0 +1,5 @@
+#seq_name	length	cov.	circ.	repeat	mult.	alt_group	graph_path
+contig_1	4807874	29	Y	N	1	*	1
+contig_4	33311	86	Y	Y	3	*	4
+contig_2	12290	37	N	N	5	*	*,2,*
+contig_3	8953	67	Y	N	8	*	3

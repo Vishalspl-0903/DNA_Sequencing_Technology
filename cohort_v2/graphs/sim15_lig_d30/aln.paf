@@ -1,0 +1,2 @@
+plasmid_3	46137	0	44100	+	edge_2	46137	2037	46137	44100	44100	60	NM:i:0	ms:i:44100	AS:i:44100	nn:i:0	tp:A:P	cm:i:4458	s1:i:44084	s2:i:93	de:f:0	rl:i:0	cg:Z:44100M
+plasmid_3	46137	44100	46137	+	edge_2	46137	0	2037	2037	2037	60	NM:i:0	ms:i:2037	AS:i:2037	nn:i:0	tp:A:P	cm:i:211	s1:i:2017	s2:i:93	de:f:0	rl:i:0	cg:Z:2037M

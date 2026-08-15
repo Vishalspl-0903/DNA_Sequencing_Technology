@@ -1,0 +1,7 @@
+{"isolate":"sim32","tag":"sim32_lig_d15","arm":"r9_raw","prep":"lig",
+ "depth_fraction_x":15,"fragment_length":"15000,13000",
+ "badread_seed":20264026,"badread_error_model":"nanopore2020",
+ "badread_qscore_model":"nanopore2020",
+ "flye_mode":"--nano-raw","threads":6,"read_bases":75371204,
+ "seconds_flye":186,"small_plasmid_bias":true,
+ "n_segments":4,"flye_version":"2.9.6-b1802"}
