@@ -1,5 +1,0 @@
-{"isolate":"sim05","tag":"sim05_lig_d30","arm":"r10_hq","prep":"lig",
- "depth_fraction_x":30,"fragment_length":"6000,4000",
- "flye_mode":"--nano-hq","threads":10,"read_bases":155199441,
- "seconds_flye":118,"small_plasmid_bias":true,
- "n_segments":22,"flye_version":"2.9.6-b1802"}

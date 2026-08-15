@@ -5,3 +5,5 @@ Dataset/
 # Python bytecode — not source, always regenerated, harmless to exclude
 __pycache__/
 *.pyc
+
+work/
