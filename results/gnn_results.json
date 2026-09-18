@@ -2,11 +2,11 @@
   "n_isolates": 50,
   "n_graphs": 200,
   "b4_plasmid_pooled_head": {
-    "pr_auc": 0.8852754456276972,
-    "bootstrap_mean": 0.8846662747426959,
+    "pr_auc": 0.9714786972101974,
+    "bootstrap_mean": 0.9708991221526864,
     "bootstrap_ci95": [
-      0.8079778264829969,
-      0.9410937642487159
+      0.948902703798422,
+      0.9883626767748981
     ],
     "note": "Descriptive only per open item B -- pooled S(p) structurally encodes label rules, not the confirmatory number."
   },
@@ -15,7 +15,7 @@
     "note": "fragmented/absorbed/recovered only, |S(p)|>=1. Add multi-class PR-AUC per class here once real Wick data gives enough fragmented/absorbed units to compute it meaningfully (v3 sim gates needed >=20 per class; real data will likely need the same floor before trusting this number)."
   },
   "confirmatory_graph_head": {
-    "mae_missing_count": 0.554234536588192,
+    "mae_missing_count": 0.5103129116445779,
     "note": "Lower is better; compare against a trivial 'always predict cohort mean absence count' floor before interpreting."
   },
   "WARNING": "If n_isolates < 10, treat every number above as illustrative, not a claim. Report interval width, not just the point estimate. This mirrors PROGRESS.md's own treatment of the v1 (n=12) results."
