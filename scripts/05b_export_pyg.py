@@ -23,7 +23,13 @@ import os, csv, json, collections
 import torch
 from torch_geometric.data import Data
 
-ROOT = r"D:\Plasmid-GNN\DNA_Sequencing_Technology\work"
+# PATCHED: the original hardcoded a Windows dev path
+# (D:\Plasmid-GNN\DNA_Sequencing_Technology\work) that does not exist on any
+# other machine and does not match this repo's actual layout (asm/, graphs/,
+# results/ live at the repo root, not under a "work" subfolder). Derive ROOT
+# from the script's own location instead, so this runs unmodified on macOS,
+# Linux, or Windows, straight out of `git clone`.
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FEATS = ["log10_length", "relative_depth", "delta_gc",
          "degree", "component_size", "n_components", "depth_x_length"]
 POSITIVE_LABELS = ("fragmented", "absorbed", "absent")
@@ -83,6 +89,7 @@ def build(tag, node_feats):
                 y_node[idx[r["segment"]]] = 1.0
 
     plasmids, y_plasmid, support_sets, gray = [], [], [], 0
+    plasmid_labels4, plasmid_lens = [], []   # PATCHED: see note below
     n_absent = 0
     for r in csv.DictReader(open(lp)):
         if r["label"] == "gray_50_95":
@@ -94,6 +101,14 @@ def build(tag, node_feats):
         y_plasmid.append(1.0 if r["label"] in POSITIVE_LABELS else 0.0)
         sup = [idx[s] for s in r["support"].split(";") if s and s in idx]
         support_sets.append(sup)
+        # PATCHED: 13_train_gnn.py's plasmid-pooled and node heads need the
+        # full 4-way label (recovered/fragmented/absorbed/absent) and the
+        # true plasmid length -- both already sit in plasmid_labels.csv but
+        # were being dropped here, collapsed into the binary y_plasmid used
+        # by the 06_baselines.py heads. Carry them through as parallel lists
+        # instead of changing y_plasmid, so 06_baselines.py is unaffected.
+        plasmid_labels4.append(r["label"])
+        plasmid_lens.append(float(r["plasmid_len"]))
 
     d = Data(x=x, edge_index=edge_index)
     d.y_node = y_node
@@ -102,6 +117,8 @@ def build(tag, node_feats):
     d.y_graph = torch.tensor([float(n_absent)], dtype=torch.float)  # Poisson count
     d.support = support_sets                     # pooling selector, not a feature
     d.plasmid_names = plasmids
+    d.plasmid_label4 = plasmid_labels4            # PATCHED: added
+    d.plasmid_len = plasmid_lens                  # PATCHED: added
     d.global_index = n
     d.tag = tag
     d.isolate = tag.split("_")[0]
