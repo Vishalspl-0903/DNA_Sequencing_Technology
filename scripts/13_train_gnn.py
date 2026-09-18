@@ -236,15 +236,11 @@ def run_fold(model, dataset, plasmid_examples, graph_examples,
     for _ in range(epochs):
         random.shuffle(train_plasmid)
         total_loss = 0.0
-        # cache per-graph encodings once per epoch (small n, fine to redo)
-        node_embs = {}
-        for gi in train_graph_idx:
-            d = dataset[gi].to(device)
-            node_embs[gi] = model.encoder(d.x, d.edge_index)
 
         for gi, unit in train_plasmid:
-            emb = node_embs[gi]
             opt.zero_grad()
+            d = dataset[gi].to(device)
+            emb = model.encoder(d.x, d.edge_index)
             loss = 0.0
             plen_log = torch.log10(torch.tensor(
                 float(unit["plasmid_len"]) + 1.0, device=device))
@@ -265,8 +261,9 @@ def run_fold(model, dataset, plasmid_examples, graph_examples,
             total_loss += float(loss.detach())
 
         for gi, true_count in train_graph:
-            emb = node_embs[gi]
             opt.zero_grad()
+            d = dataset[gi].to(device)
+            emb = model.encoder(d.x, d.edge_index)
             pred = model.graph_head(emb)
             target = torch.tensor([[float(true_count)]], device=device)
             gloss = F.mse_loss(pred, target)
