@@ -20,31 +20,41 @@ Evaluation: leave-isolate-out CV (grouped by isolate, exactly like
 06_baselines.py), PR-AUC, paired bootstrap over isolates, and the same
 UNRESOLVED-if-arms-disagree discipline used throughout PROGRESS.md.
 
-ASSUMPTIONS TO VERIFY AGAINST YOUR ACTUAL SCHEMA before running — I do not
-have your literal files, so these are the interfaces PROGRESS.md's own
-description implies. Search-and-adjust anywhere marked ADAPT.
+SCHEMA — VERIFIED AGAINST THE ACTUAL EXPORT (2026-09-18), not assumed.
 
-  - pyg_dataset.pt is a list[torch_geometric.data.Data], one per (isolate,
-    prep, depth) cell / per real isolate, each with:
-      data.x          : [N, F] node features (6 features as built by
-                         05_features.py), global node appended last,
-                         flagged by an extra column (per §6 of PROGRESS.md)
-      data.edge_index : [2, E] simple undirected graph, self-loops dropped
-      data.isolate    : str, isolate id (for grouping in CV) -- ADAPT if
-                         this lives in a separate manifest instead
-      data.plasmid_units : list of dicts, one per label unit in this graph:
-            { "plasmid_id": str,
-              "label": one of {"recovered","fragmented","absorbed","absent"},
-              "support_nodes": list[int]  # indices into data.x, S(p)
-              "plasmid_len": float }
-        ADAPT: if this lives in plasmid_labels.csv / node_labels.csv instead
-        of embedded in the Data object, load and join by (isolate, plasmid_id)
-        before calling build_examples().
+The original draft of this file guessed at a `data.plasmid_units` list of
+dicts. That does not exist. The real object built by 05b_export_pyg.py
+(confirmed by reading it directly) stores parallel lists/tensors instead:
 
-Run:
-    python 13_train_gnn.py --dataset work/results/pyg_dataset.pt \
-                            --out work/results/gnn_results.json \
-                            --mode leave_isolate_out
+      data.x            : [N, F] node features, global node appended last.
+      data.edge_index   : [2, E] simple undirected graph, self-loops dropped.
+      data.isolate      : str, isolate id -- matches, used as-is.
+      data.plasmid_names: list[str], one per plasmid unit in this graph.
+      data.support      : list[list[int]], node indices into data.x -- S(p).
+      data.y_plasmid    : binary tensor (fragmented/absorbed/absent = 1),
+                           collapsed -- NOT the 4-way label this file needs.
+      data.plasmid_label4, data.plasmid_len : did not exist in the original
+                           export either (05b_export_pyg.py dropped the
+                           4-way label and true plasmid length when it built
+                           y_plasmid). Both are cheap to recover -- they're
+                           already columns in plasmid_labels.csv on disk --
+                           so 05b_export_pyg.py was patched to also carry
+                           them through, additively, without touching
+                           y_plasmid (06_baselines.py still gets the same
+                           file it always did). Re-run that export once
+                           before training here; see README_RUNBOOK.md.
+
+build_examples() below is rewritten to construct the same per-unit dict this
+file's model code expects, from those parallel lists -- so everything from
+GNNModel onward is unchanged from the original draft.
+
+Also patched: torch.load() below now passes weights_only=False. Torch >=2.6
+changed that default to True, which refuses to unpickle a list of custom
+Data/dict/str objects like this dataset and raises instead of loading it.
+
+Run (from the repo root, after `pip install torch torch_geometric scikit-learn`):
+    python scripts/13_train_gnn.py --dataset results/pyg_dataset.pt \
+                                    --out results/gnn_results.json
 """
 
 import argparse
@@ -167,21 +177,45 @@ class GNNModel(nn.Module):
 
 def build_examples(dataset):
     """Flatten the per-graph dataset into (graph_idx, plasmid_unit) pairs,
-    plus one graph-level absence-count example per graph."""
+    plus one graph-level absence-count example per graph.
+
+    PATCHED: the real Data object stores plasmid_names / support / y_plasmid
+    (and now plasmid_label4 / plasmid_len, added by the patched
+    05b_export_pyg.py) as parallel lists rather than a list of dicts. This
+    zips them back into the same {"plasmid_id","label","support_nodes",
+    "plasmid_len"} shape the rest of this file was written against, so
+    nothing below this function had to change.
+    """
     plasmid_examples = []
     graph_examples = []
     for gi, data in enumerate(dataset):
+        if not hasattr(data, "plasmid_label4"):
+            raise SystemExit(
+                "data.plasmid_label4 / data.plasmid_len not found on this "
+                "dataset -- results/pyg_dataset.pt needs to be regenerated "
+                "with the patched 05b_export_pyg.py first (see "
+                "README_RUNBOOK.md, step 2)."
+            )
         n_absent = 0
-        for unit in data.plasmid_units:  # ADAPT if stored elsewhere
+        for pid, label, sup, plen in zip(
+            data.plasmid_names, data.plasmid_label4, data.support, data.plasmid_len
+        ):
+            unit = {
+                "plasmid_id": pid,
+                "label": label,
+                "support_nodes": sup,
+                "plasmid_len": plen,
+            }
             plasmid_examples.append((gi, unit))
-            if unit["label"] == "absent":
+            if label == "absent":
                 n_absent += 1
         graph_examples.append((gi, n_absent))
     return plasmid_examples, graph_examples
 
 
 def isolate_groups(dataset):
-    """ADAPT: replace with your real isolate-id lookup if not on data.isolate."""
+    """data.isolate matches the real export (confirmed against
+    05b_export_pyg.py: d.isolate = tag.split("_")[0])."""
     return [d.isolate for d in dataset]
 
 
@@ -312,7 +346,12 @@ def main():
     random.seed(SEED)
     np.random.seed(SEED)
 
-    dataset = torch.load(args.dataset)  # ADAPT: weights_only kwarg per torch version
+    # PATCHED: torch>=2.6 defaults weights_only=True, which refuses to
+    # unpickle this dataset (a list of custom Data objects holding plain
+    # Python lists/strs, not just tensors). We built this file ourselves in
+    # this same pipeline, so it's trusted -- weights_only=False is correct
+    # here, not a security shortcut on untrusted input.
+    dataset = torch.load(args.dataset, weights_only=False)
     isolates = isolate_groups(dataset)
     unique_isolates = sorted(set(isolates))
     print(f"{len(dataset)} graphs across {len(unique_isolates)} isolates.")
