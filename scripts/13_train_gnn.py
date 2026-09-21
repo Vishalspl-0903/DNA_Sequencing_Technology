@@ -236,11 +236,15 @@ def run_fold(model, dataset, plasmid_examples, graph_examples,
     for _ in range(epochs):
         random.shuffle(train_plasmid)
         total_loss = 0.0
+        # cache per-graph encodings once per epoch (small n, fine to redo)
+        node_embs = {}
+        for gi in train_graph_idx:
+            d = dataset[gi].to(device)
+            node_embs[gi] = model.encoder(d.x, d.edge_index)
 
         for gi, unit in train_plasmid:
+            emb = node_embs[gi]
             opt.zero_grad()
-            d = dataset[gi].to(device)
-            emb = model.encoder(d.x, d.edge_index)
             loss = 0.0
             plen_log = torch.log10(torch.tensor(
                 float(unit["plasmid_len"]) + 1.0, device=device))
@@ -261,9 +265,8 @@ def run_fold(model, dataset, plasmid_examples, graph_examples,
             total_loss += float(loss.detach())
 
         for gi, true_count in train_graph:
+            emb = node_embs[gi]
             opt.zero_grad()
-            d = dataset[gi].to(device)
-            emb = model.encoder(d.x, d.edge_index)
             pred = model.graph_head(emb)
             target = torch.tensor([[float(true_count)]], device=device)
             gloss = F.mse_loss(pred, target)
@@ -392,6 +395,33 @@ def main():
     graph_pred_all = np.array(graph_pred_all)
     graph_true_all = np.array(graph_true_all)
     graph_mae = float(np.mean(np.abs(graph_pred_all - graph_true_all))) if len(graph_true_all) else float("nan")
+    # PATCHED: MAE alone is meaningless without a floor. Compare against the
+    # trivial "always predict the cohort's mean absence count" baseline --
+    # this was collected in PROPOSAL_FIXES.md as something to check before
+    # interpreting the number, but never actually computed.
+    baseline_pred = float(np.mean(graph_true_all)) if len(graph_true_all) else float("nan")
+    graph_mae_baseline = float(np.mean(np.abs(graph_true_all - baseline_pred))) if len(graph_true_all) else float("nan")
+
+    # PATCHED: node head PR-AUC was never computed -- node_probs_all /
+    # node_true_all were collected every fold and then dropped on the floor.
+    # This is the actual confirmatory number for "did GraphSAGE learn
+    # relational topology, not just definitions" -- compute it one-vs-rest
+    # per class (fragmented / absorbed / recovered), plus a majority-class
+    # baseline so a bare PR-AUC isn't misread as good in isolation.
+    node_labels_present = ["fragmented", "absorbed", "recovered"]
+    node_true_arr = np.array(node_true_all)
+    node_probs_arr = np.array(node_probs_all) if node_probs_all else np.zeros((0, 3))
+    node_pr_auc_per_class = {}
+    node_baseline_per_class = {}
+    for ci, cname in enumerate(node_labels_present):
+        y = (node_true_arr == ci).astype(int)
+        if len(y) == 0 or len(set(y)) < 2:
+            node_pr_auc_per_class[cname] = None
+            node_baseline_per_class[cname] = None
+            continue
+        node_pr_auc_per_class[cname] = float(
+            average_precision_score(y, node_probs_arr[:, ci]))
+        node_baseline_per_class[cname] = float(y.mean())  # prevalence = trivial PR-AUC floor
 
     out = {
         "n_isolates": len(unique_isolates),
@@ -406,18 +436,25 @@ def main():
         },
         "confirmatory_node_head": {
             "n_examples": len(node_true_all),
+            "pr_auc_per_class": node_pr_auc_per_class,
+            "prevalence_baseline_per_class": node_baseline_per_class,
             "note": "fragmented/absorbed/recovered only, |S(p)|>=1. "
-                    "Add multi-class PR-AUC per class here once real "
-                    "Wick data gives enough fragmented/absorbed units "
-                    "to compute it meaningfully (v3 sim gates needed "
-                    ">=20 per class; real data will likely need the "
-                    "same floor before trusting this number).",
+                    "Compare pr_auc_per_class against "
+                    "prevalence_baseline_per_class (score a random/majority "
+                    "guesser would get) -- pr_auc close to or below the "
+                    "baseline means this head is not learning anything "
+                    "past class frequency. <20 examples per class "
+                    "(v3 sim gate) means treat these as illustrative only; "
+                    "real Wick data is needed before trusting this number.",
         },
         "confirmatory_graph_head": {
             "mae_missing_count": graph_mae,
-            "note": "Lower is better; compare against a trivial "
-                    "'always predict cohort mean absence count' floor "
-                    "before interpreting.",
+            "mae_baseline_predict_mean": graph_mae_baseline,
+            "note": "Lower is better. Compare mae_missing_count against "
+                    "mae_baseline_predict_mean (always predicting the "
+                    "cohort's mean absence count) -- if the model's MAE "
+                    "isn't clearly below the baseline, it isn't adding "
+                    "anything over predicting the average.",
         },
         "WARNING": (
             "If n_isolates < 10, treat every number above as illustrative, "
