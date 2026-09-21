@@ -2,21 +2,32 @@
   "n_isolates": 50,
   "n_graphs": 200,
   "b4_plasmid_pooled_head": {
-    "pr_auc": 0.9714786972101974,
-    "bootstrap_mean": 0.9708991221526864,
+    "pr_auc": 0.9603369193788936,
+    "bootstrap_mean": 0.9596816428266972,
     "bootstrap_ci95": [
-      0.948902703798422,
-      0.9883626767748981
+      0.9221195911462455,
+      0.9867676330874354
     ],
     "note": "Descriptive only per open item B -- pooled S(p) structurally encodes label rules, not the confirmatory number."
   },
   "confirmatory_node_head": {
     "n_examples": 535,
-    "note": "fragmented/absorbed/recovered only, |S(p)|>=1. Add multi-class PR-AUC per class here once real Wick data gives enough fragmented/absorbed units to compute it meaningfully (v3 sim gates needed >=20 per class; real data will likely need the same floor before trusting this number)."
+    "pr_auc_per_class": {
+      "fragmented": 0.6821827414899163,
+      "absorbed": 0.9494039529678143,
+      "recovered": 0.9839764507894735
+    },
+    "prevalence_baseline_per_class": {
+      "fragmented": 0.03177570093457944,
+      "absorbed": 0.08785046728971962,
+      "recovered": 0.8803738317757009
+    },
+    "note": "fragmented/absorbed/recovered only, |S(p)|>=1. Compare pr_auc_per_class against prevalence_baseline_per_class (score a random/majority guesser would get) -- pr_auc close to or below the baseline means this head is not learning anything past class frequency. <20 examples per class (v3 sim gate) means treat these as illustrative only; real Wick data is needed before trusting this number."
   },
   "confirmatory_graph_head": {
-    "mae_missing_count": 0.5103129116445779,
-    "note": "Lower is better; compare against a trivial 'always predict cohort mean absence count' floor before interpreting."
+    "mae_missing_count": 0.5280177980288863,
+    "mae_baseline_predict_mean": 0.5929000000000001,
+    "note": "Lower is better. Compare mae_missing_count against mae_baseline_predict_mean (always predicting the cohort's mean absence count) -- if the model's MAE isn't clearly below the baseline, it isn't adding anything over predicting the average."
   },
   "WARNING": "If n_isolates < 10, treat every number above as illustrative, not a claim. Report interval width, not just the point estimate. This mirrors PROGRESS.md's own treatment of the v1 (n=12) results."
 }

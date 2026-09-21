@@ -229,49 +229,54 @@ def run_fold(model, dataset, plasmid_examples, graph_examples,
     train_graph_idx = set(train_graph_idx)
     test_graph_idx = set(test_graph_idx)
 
-    train_plasmid = [(gi, u) for gi, u in plasmid_examples if gi in train_graph_idx]
-    train_graph = [(gi, c) for gi, c in graph_examples if gi in train_graph_idx]
+    # Group plasmid examples by graph for clean single-pass training per graph
+    train_plasmid_by_graph = defaultdict(list)
+    for gi, u in plasmid_examples:
+        if gi in train_graph_idx:
+            train_plasmid_by_graph[gi].append(u)
+
+    train_graph_dict = {gi: c for gi, c in graph_examples if gi in train_graph_idx}
+    train_gis = list(train_graph_idx)
 
     model.train()
     for _ in range(epochs):
-        random.shuffle(train_plasmid)
+        random.shuffle(train_gis)
         total_loss = 0.0
-        # cache per-graph encodings once per epoch (small n, fine to redo)
-        node_embs = {}
-        for gi in train_graph_idx:
+
+        for gi in train_gis:
+            opt.zero_grad()
             d = dataset[gi].to(device)
-            node_embs[gi] = model.encoder(d.x, d.edge_index)
+            emb = model.encoder(d.x, d.edge_index)
+            loss = torch.tensor(0.0, device=device)
 
-        for gi, unit in train_plasmid:
-            emb = node_embs[gi]
-            opt.zero_grad()
-            loss = 0.0
-            plen_log = torch.log10(torch.tensor(
-                float(unit["plasmid_len"]) + 1.0, device=device))
-            logits = model.plasmid_head(
-                emb, unit["support_nodes"], plen_log, emb[-1])
-            target = torch.tensor([LABEL2IDX[unit["label"]]], device=device)
-            loss = loss + F.cross_entropy(logits, target)
+            plasmids = train_plasmid_by_graph.get(gi, [])
+            for unit in plasmids:
+                plen_log = torch.log10(torch.tensor(
+                    float(unit["plasmid_len"]) + 1.0, device=device))
+                logits = model.plasmid_head(
+                    emb, unit["support_nodes"], plen_log, emb[d.global_index])
+                target = torch.tensor([LABEL2IDX[unit["label"]]], device=device)
+                loss = loss + F.cross_entropy(logits, target)
 
-            if len(unit["support_nodes"]) > 0 and unit["label"] != "absent":
-                node_labels_present = ["fragmented", "absorbed", "recovered"]
-                if unit["label"] in node_labels_present:
-                    nlogits = model.node_head(emb, unit["support_nodes"])
-                    ntarget = torch.tensor(
-                        [node_labels_present.index(unit["label"])], device=device)
-                    loss = loss + F.cross_entropy(nlogits, ntarget)
-            loss.backward()
-            opt.step()
-            total_loss += float(loss.detach())
+                if len(unit["support_nodes"]) > 0 and unit["label"] != "absent":
+                    node_labels_present = ["fragmented", "absorbed", "recovered"]
+                    if unit["label"] in node_labels_present:
+                        nlogits = model.node_head(emb, unit["support_nodes"])
+                        ntarget = torch.tensor(
+                            [node_labels_present.index(unit["label"])], device=device)
+                        loss = loss + F.cross_entropy(nlogits, ntarget)
 
-        for gi, true_count in train_graph:
-            emb = node_embs[gi]
-            opt.zero_grad()
-            pred = model.graph_head(emb)
-            target = torch.tensor([[float(true_count)]], device=device)
-            gloss = F.mse_loss(pred, target)
-            gloss.backward()
-            opt.step()
+            if gi in train_graph_dict:
+                true_count = train_graph_dict[gi]
+                pred = model.graph_head(emb)
+                target = torch.tensor([[float(true_count)]], device=device)
+                gloss = F.mse_loss(pred, target)
+                loss = loss + gloss
+
+            if loss.requires_grad:
+                loss.backward()
+                opt.step()
+                total_loss += float(loss.detach())
 
     # ---- eval on held-out isolate's graph(s) ----
     model.eval()
@@ -286,7 +291,7 @@ def run_fold(model, dataset, plasmid_examples, graph_examples,
                 plen_log = torch.log10(torch.tensor(
                     float(unit["plasmid_len"]) + 1.0, device=device))
                 logits = model.plasmid_head(
-                    emb, unit["support_nodes"], plen_log, emb[-1])
+                    emb, unit["support_nodes"], plen_log, emb[d.global_index])
                 prob_fail = 1.0 - F.softmax(logits, dim=1)[0, LABEL2IDX["recovered"]].item()
                 results["plasmid_probs"].append(prob_fail)
                 results["plasmid_true"].append(0 if unit["label"] == "recovered" else 1)
@@ -300,10 +305,11 @@ def run_fold(model, dataset, plasmid_examples, graph_examples,
                         results["node_true"].append(
                             node_labels_present.index(unit["label"]))
 
-            true_count = dict(graph_examples)[gi]
-            pred_count = model.graph_head(emb).item()
-            results["graph_pred"].append(pred_count)
-            results["graph_true"].append(true_count)
+            if gi in dict(graph_examples):
+                true_count = dict(graph_examples)[gi]
+                pred_count = model.graph_head(emb).item()
+                results["graph_pred"].append(pred_count)
+                results["graph_true"].append(true_count)
 
     return results
 
@@ -340,6 +346,8 @@ def main():
     ap.add_argument("--epochs", type=int, default=60)
     ap.add_argument("--hidden", type=int, default=64)
     ap.add_argument("--device", default="cpu")
+    ap.add_argument("--save_model", default="results/gnn_model.pt", help="path to save final trained model")
+    ap.add_argument("--train_full_only", action="store_true", help="train single model on 100% data and save")
     args = ap.parse_args()
 
     torch.manual_seed(SEED)
@@ -362,6 +370,16 @@ def main():
 
     plasmid_examples, graph_examples = build_examples(dataset)
     in_dim = dataset[0].x.shape[1]
+
+    if args.train_full_only:
+        print(f"Training single model on 100% data ({len(dataset)} graphs) for {args.epochs} epochs...")
+        model = GNNModel(in_dim=in_dim, hidden=args.hidden).to(args.device)
+        train_idx = list(range(len(dataset)))
+        run_fold(model, dataset, plasmid_examples, graph_examples,
+                 train_idx, test_graph_idx=[], device=args.device, epochs=args.epochs)
+        torch.save(model.state_dict(), args.save_model)
+        print(f"Trained model state_dict successfully saved to {args.save_model}")
+        return
 
     per_isolate_probs, per_isolate_true = defaultdict(list), defaultdict(list)
     graph_pred_all, graph_true_all = [], []
@@ -467,6 +485,15 @@ def main():
         json.dump(out, f, indent=2)
     print(json.dumps(out, indent=2))
 
+    if args.save_model:
+        print(f"Training master model on 100% data ({len(dataset)} graphs) for checkpoint...")
+        master_model = GNNModel(in_dim=in_dim, hidden=args.hidden).to(args.device)
+        run_fold(master_model, dataset, plasmid_examples, graph_examples,
+                 list(range(len(dataset))), test_graph_idx=[], device=args.device, epochs=args.epochs)
+        torch.save(master_model.state_dict(), args.save_model)
+        print(f"Master model saved to {args.save_model}")
+
 
 if __name__ == "__main__":
     main()
+
