@@ -1,0 +1,34 @@
+{
+  "n_isolates": 7,
+  "n_graphs": 7,
+  "b4_plasmid_pooled_head": {
+    "pr_auc": 0.7348639455782313,
+    "bootstrap_mean": 0.6835537871168594,
+    "bootstrap_ci95": [
+      0.08333333333333333,
+      0.9722222222222223
+    ],
+    "note": "Descriptive only per open item B -- pooled S(p) structurally encodes label rules, not the confirmatory number."
+  },
+  "confirmatory_node_head": {
+    "n_examples": 26,
+    "pr_auc_per_class": {
+      "fragmented": 0.06272727272727273,
+      "absorbed": null,
+      "recovered": 0.8205642299979525
+    },
+    "prevalence_baseline_per_class": {
+      "fragmented": 0.07692307692307693,
+      "absorbed": null,
+      "recovered": 0.9230769230769231
+    },
+    "note": "fragmented/absorbed/recovered only, |S(p)|>=1. Compare pr_auc_per_class against prevalence_baseline_per_class -- pr_auc close to or below the baseline means this head is not learning anything past class frequency."
+  },
+  "confirmatory_graph_head": {
+    "mae_missing_count": 1.5266296554888998,
+    "mae_baseline_predict_mean": 1.0204081632653061,
+    "note": "Lower is better. Compare mae_missing_count against mae_baseline_predict_mean."
+  },
+  "WARNING": "If n_isolates < 10, treat every number above as illustrative, not a claim. Report interval width, not just the point estimate.",
+  "mode": "leave-isolate-out CV on results/wick_pyg_dataset.pt"
+}
