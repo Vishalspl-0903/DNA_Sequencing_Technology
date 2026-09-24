@@ -121,16 +121,35 @@ def build(tag, node_feats):
     d.plasmid_len = plasmid_lens                  # PATCHED: added
     d.global_index = n
     d.tag = tag
-    d.isolate = tag.split("_")[0]
+    # PATCHED: tag.split("_")[0] collapsed every Wick isolate to "wick"
+    # (same bug class as 04_label.py's iso-parsing fix) -- Wick tags have
+    # no trailing _<prep>_<depth> suffix like sim tags do, so the whole tag
+    # is already a unique per-isolate id; only sim tags need the split.
+    d.isolate = tag if tag.startswith("wick_") else tag.split("_")[0]
     d.n_segments = n
     d.gray_held_out = gray
     return d
 
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--tag-prefix", default=None,
+                     help="Only export tags starting with this prefix, e.g. "
+                          "'wick' or 'sim'. PATCHED: added so real (Wick) "
+                          "and simulated tags -- which will both live in the "
+                          "same node_features.csv once Wick has been run "
+                          "through 05_features.py -- don't get merged into "
+                          "one pyg_dataset.pt by accident.")
+    ap.add_argument("--out", default=None,
+                     help="Output path, default results/pyg_dataset.pt")
+    args = ap.parse_args()
+
     nf = collections.defaultdict(dict)
     fp = os.path.join(ROOT, "results", "node_features.csv")
     for r in csv.DictReader(open(fp)):
+        if args.tag_prefix and not r["tag"].startswith(args.tag_prefix):
+            continue
         nf[r["tag"]][r["segment"]] = {k: float(r[k]) for k in FEATS}
 
     graphs = []
@@ -146,8 +165,8 @@ def main():
                  int(d.y_plasmid.sum()), int(d.y_graph.item()), empty))
 
     if not graphs:
-        print("no graphs to export"); return
-    out = os.path.join(ROOT, "results", "pyg_dataset.pt")
+        print("no graphs to export (check --tag-prefix)"); return
+    out = args.out or os.path.join(ROOT, "results", "pyg_dataset.pt")
     torch.save(graphs, out)
     print()
     print("  graphs        :", len(graphs))

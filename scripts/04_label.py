@@ -219,12 +219,15 @@ def label_one(asm_dir, ref_fasta, out_dir, mm2):
 
 
 def default_root():
-    """minimap2 lives in the WSL env, so this script normally runs under WSL
-    against /mnt/d; keep the Windows path working for local inspection."""
+    """PATCHED: this used to hardcode a Windows/WSL dev path
+    (D:\\Plasmid-GNN\\...\\work), same class of bug already found and fixed
+    in 05b_export_pyg.py. Derive it from this script's own location instead
+    -- scripts/ is one level below the repo root, where asm/, graphs/,
+    Dataset/ all actually live. PIPE_ROOT still overrides, for anyone who
+    wants a different layout."""
     return os.environ.get(
         "PIPE_ROOT",
-        r"D:\Plasmid-GNN\DNA_Sequencing_Technology\work" if os.name == "nt"
-        else "/mnt/d/Plasmid-GNN/DNA_Sequencing_Technology/work")
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 if __name__ == "__main__":
@@ -236,9 +239,21 @@ if __name__ == "__main__":
                   if os.path.isdir(os.path.join(asm_root, d)))
     allsum = []
     for tag in todo:
-        iso = tag.split("_")[0]          # sim01_lig_d30 -> sim01
-        ref = os.path.join(root, "sim", iso + "_ref.fasta")
+        # PATCHED: this used to be `iso = tag.split("_")[0]` then
+        # `sim/<iso>_ref.fasta` unconditionally -- correct for simulated
+        # tags like "sim01_lig_d30" -> "sim01", but silently WRONG for real
+        # Wick tags. "wick_Acinetobacter_baumannii_J9".split("_")[0] is just
+        # "wick" -- it would look for sim/wick_ref.fasta, never find it, and
+        # `continue` past every single Wick isolate with NO error at all.
+        # Confirmed against the real code before patching, not guessed.
+        if tag.startswith("wick_"):
+            isolate_name = tag[len("wick_"):]
+            ref = os.path.join(root, "Dataset", "assemblies", isolate_name + ".fasta")
+        else:
+            iso = tag.split("_")[0]          # sim01_lig_d30 -> sim01
+            ref = os.path.join(root, "sim", iso + "_ref.fasta")
         if not os.path.exists(ref):
+            print("SKIPPING %s -- reference not found at %s" % (tag, ref))
             continue
         print("labelling", tag)
         s = label_one(os.path.join(asm_root, tag), ref,

@@ -21,7 +21,10 @@ diagnostic -- the label definition itself invokes circularity.
 """
 import os, csv, json, collections, statistics
 
-ROOT = r"D:\Plasmid-GNN\DNA_Sequencing_Technology\work"
+# PATCHED: portable ROOT, same fix as 04_label.py / 05b_export_pyg.py.
+ROOT = os.environ.get(
+    "PIPE_ROOT",
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 CHROM_MIN = 500_000
 
 
