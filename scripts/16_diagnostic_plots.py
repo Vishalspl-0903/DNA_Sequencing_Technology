@@ -116,8 +116,14 @@ def plot_embedding(res, out_dir, suffix):
         print("skipping embedding plot -- too few nodes"); return
     try:
         import umap
-        reducer = umap.UMAP(random_state=20260812)
-        method = "UMAP"
+        n_neighbors = min(15, max(2, emb.shape[0] // 5))
+        # PATCHED: default n_neighbors=15 is ~20% of a 72-node dataset --
+        # far too large a fraction for data this small, and can force
+        # spurious global structure (e.g. one cluster wrongly pulled far
+        # from everything else). Scale down for small inputs, same
+        # principle already applied to the t-SNE fallback's perplexity.
+        reducer = umap.UMAP(random_state=20260812, n_neighbors=n_neighbors)
+        method = f"UMAP (n_neighbors={n_neighbors})"
     except ImportError:
         reducer = TSNE(n_components=2, random_state=20260812,
                         perplexity=min(30, max(2, emb.shape[0] // 3)))
@@ -225,19 +231,29 @@ def plot_feature_importance(mod, dataset, model, out_dir, suffix, device="cpu"):
         return float(np.mean(aps)) if aps else float("nan")
 
     rng = np.random.default_rng(20260812)
+    # PATCHED: a single permutation draw on n=26 examples is noisy enough to
+    # show a feature as "harmful" (negative drop) purely by chance. Average
+    # over several draws so the bars reflect real importance, not one
+    # unlucky/lucky shuffle.
+    n_repeats = 8
     baseline = score_with_permutation(None, rng)
-    drops = {}
-    for fi, fname in enumerate(FEATS):
-        shuffled = score_with_permutation(fi, rng)
-        drops[fname] = baseline - shuffled
+    drops = {fname: [] for fname in FEATS}
+    for _ in range(n_repeats):
+        for fi, fname in enumerate(FEATS):
+            shuffled = score_with_permutation(fi, rng)
+            drops[fname].append(baseline - shuffled)
+    drop_mean = {k: float(np.mean(v)) for k, v in drops.items()}
+    drop_std = {k: float(np.std(v)) for k, v in drops.items()}
 
     fig, ax = plt.subplots(figsize=(8, 5))
-    names = sorted(drops, key=lambda k: drops[k])
-    ax.barh(names, [drops[n] for n in names], color="#1f77b4")
+    names = sorted(drop_mean, key=lambda k: drop_mean[k])
+    ax.barh(names, [drop_mean[n] for n in names],
+            xerr=[drop_std[n] for n in names], capsize=3, color="#1f77b4")
     ax.axvline(0, c="k", lw=1)
-    ax.set_xlabel("Mean node-head PR-AUC drop when this feature is shuffled")
+    ax.set_xlabel(f"Mean PR-AUC drop when shuffled ({n_repeats} repeats, error bars = std)")
     ax.set_title(f"Permutation feature importance {suffix}\n"
-                 f"(baseline mean PR-AUC = {baseline:.3f})")
+                 f"(baseline mean PR-AUC = {baseline:.3f}, n={len(units)} examples -- "
+                 f"treat bars smaller than their error bar as noise, not signal)")
     fig.tight_layout()
     p = os.path.join(out_dir, "4_feature_importance.png")
     fig.savefig(p, dpi=150); plt.close(fig)
@@ -273,12 +289,52 @@ def plot_feature_importance(mod, dataset, model, out_dir, suffix, device="cpu"):
 
         n_bg = min(20, len(X))
         explainer = shap.KernelExplainer(predict_fn, X[:n_bg])
-        shap_values = explainer.shap_values(X[:n_bg], nsamples=100)
-        fig = plt.figure(figsize=(8, 6))
-        shap.summary_plot(shap_values, X[:n_bg], feature_names=FEATS, show=False)
-        p = os.path.join(out_dir, "4b_shap_summary.png")
-        fig.savefig(p, dpi=150, bbox_inches="tight"); plt.close(fig)
-        print("wrote", p, "(isolated-node approximation -- see code comment)")
+        raw = explainer.shap_values(X[:n_bg], nsamples=100)
+
+        # PATCHED AGAIN: different shap versions return multi-class output
+        # differently -- older versions: a list of 3 arrays, each
+        # (n_samples, n_features). Newer versions: one ndarray, shape
+        # (n_samples, n_features, n_classes). Guessing which one silently
+        # produced only one (wrong) plot last time. Detect explicitly and
+        # normalize to a plain list of clean 2D arrays before doing anything
+        # else, so the rest of this code never has to guess again.
+        print(f"shap raw output: type={type(raw)}, "
+              f"shape={getattr(raw, 'shape', [getattr(a, 'shape', '?') for a in raw] if isinstance(raw, list) else '?')}")
+        if isinstance(raw, list):
+            per_class = raw                                   # old convention
+        elif isinstance(raw, np.ndarray) and raw.ndim == 3:
+            per_class = [raw[:, :, c] for c in range(raw.shape[2])]  # new convention
+        elif isinstance(raw, np.ndarray) and raw.ndim == 2:
+            per_class = [raw]                                 # single-output, unexpected here but handled
+        else:
+            per_class = None
+
+        if per_class is None:
+            print(f"Unrecognized shap output shape -- skipping SHAP plots. "
+                  f"Paste the 'shap raw output' line above back to me.")
+        else:
+            for ci, cname in enumerate(NODE_CLASSES):
+                if ci >= len(per_class):
+                    continue
+                sv = per_class[ci]
+                if sv.ndim != 2 or sv.shape[1] != len(FEATS):
+                    print(f"skipping {cname}: unexpected shape {sv.shape}")
+                    continue
+                shap.summary_plot(sv, X[:n_bg], feature_names=FEATS, show=False)
+                fig = plt.gcf()
+                p = os.path.join(out_dir, f"4b_shap_summary_{cname}.png")
+                fig.savefig(p, dpi=150, bbox_inches="tight")
+                plt.close(fig)
+                print("wrote", p)
+
+            if len(per_class) > 1:
+                shap.summary_plot(per_class, X[:n_bg], feature_names=FEATS,
+                                   plot_type="bar", class_names=NODE_CLASSES, show=False)
+                fig = plt.gcf()
+                p = os.path.join(out_dir, "4c_shap_summary_bar_all_classes.png")
+                fig.savefig(p, dpi=150, bbox_inches="tight")
+                plt.close(fig)
+                print("wrote", p)
     except ImportError:
         print("shap not installed (pip install shap) -- skipped SHAP summary "
               "plot, permutation importance above is the substitute.")
