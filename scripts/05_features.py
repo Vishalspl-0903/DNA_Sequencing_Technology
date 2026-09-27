@@ -148,6 +148,13 @@ def features_for(tag):
 
 
 def main():
+    # PATCHED: this used to overwrite node_features.csv / graph_diagnostics.json
+    # with ONLY whatever tags exist in THIS machine's asm/ -- which silently
+    # destroyed the 200 simulated entries when run on the Mac clone, whose
+    # local asm/ only ever had the 7 Wick folders. Now it merges: existing
+    # rows for tags not found in this run's asm/ scan are preserved, and
+    # only tags actually processed here get added/updated. Safe regardless
+    # of which subset of asm/ happens to exist on a given machine.
     asm_root = os.path.join(ROOT, "asm")
     tags = sorted(d for d in os.listdir(asm_root)
                   if os.path.isdir(os.path.join(asm_root, d)))
@@ -166,12 +173,30 @@ def main():
 
     os.makedirs(os.path.join(ROOT, "results"), exist_ok=True)
     fp = os.path.join(ROOT, "results", "node_features.csv")
+    diag_fp = os.path.join(ROOT, "results", "graph_diagnostics.json")
+    processed_tags = set(tags)
+
+    # merge node_features.csv rows by tag
+    merged_rows = []
+    if os.path.exists(fp):
+        for r in csv.DictReader(open(fp)):
+            if r["tag"] not in processed_tags:
+                merged_rows.append(r)
+    merged_rows.extend(allrows)
+
+    # merge graph_diagnostics.json entries by tag
+    merged_diags = []
+    if os.path.exists(diag_fp):
+        old = json.load(open(diag_fp))
+        merged_diags.extend(g for g in old if g["tag"] not in processed_tags)
+    merged_diags.extend(diags)
+
     with open(fp, "w", newline="") as fo:
-        w = csv.DictWriter(fo, fieldnames=list(allrows[0].keys()))
-        w.writeheader(); w.writerows(allrows)
-    json.dump(diags, open(os.path.join(ROOT, "results", "graph_diagnostics.json"), "w"),
-              indent=2)
-    print("\n-> %s  (%d nodes over %d graphs)" % (fp, len(allrows), len(diags)))
+        w = csv.DictWriter(fo, fieldnames=list(merged_rows[0].keys()))
+        w.writeheader(); w.writerows(merged_rows)
+    json.dump(merged_diags, open(diag_fp, "w"), indent=2)
+    print("\n-> %s  (%d nodes over %d graphs total, %d processed this run)"
+          % (fp, len(merged_rows), len(merged_diags), len(tags)))
     print("-> graph_diagnostics.json")
 
 

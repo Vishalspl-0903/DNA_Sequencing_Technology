@@ -32,9 +32,24 @@ def load(name):
     return json.load(open(p))
 
 
-def panel_baselines(ax, baselines, gnn):
+def panel_baselines(ax, baselines, gnn, tag_prefix):
     """Panel A: PR-AUC across every method tried so far, one axis, same
-    metric, same slice (with_is_empty = the full, real-world task)."""
+    metric, same slice (with_is_empty = the full, real-world task).
+    PATCHED: B0-B2 baselines were only ever computed on simulated data --
+    plotting a Wick GraphSAGE number next to them compares across datasets,
+    not a fair same-data comparison. Skip the baseline bars for non-sim
+    reports and say so, rather than showing a misleading chart."""
+    if tag_prefix and tag_prefix != "sim":
+        ax.text(0.5, 0.5,
+                f"Non-graph baselines (B0-B2) were only computed on "
+                f"simulated data -- no fair comparison exists yet for "
+                f"'{tag_prefix}' data on this axis.\n\nSee "
+                f"report_three_way.png for the real cross-dataset "
+                f"comparison instead.",
+                ha="center", va="center", fontsize=9, wrap=True)
+        ax.set_title("A. Plasmid-level PR-AUC (baseline comparison not applicable here)")
+        ax.axis("off")
+        return
     if baselines is None:
         ax.text(0.5, 0.5, "results/baselines.json not found", ha="center")
         return
@@ -64,11 +79,21 @@ def panel_baselines(ax, baselines, gnn):
                   "(red = flagged leaky by the project's own docs, not confirmatory)")
 
 
-def panel_topology(ax, diag):
+def panel_topology(ax, diag, tag_prefix):
     """Panel B: the actual reason B3/B4's node/graph heads are expected to
-    struggle -- most nodes have no neighbours to pass messages with."""
+    struggle -- most nodes have no neighbours to pass messages with.
+    PATCHED: graph_diagnostics.json now holds both sim and Wick entries in
+    one file (05_features.py processes everything under asm/); filter by
+    tag prefix so a "simulated" report doesn't show Wick's topology or
+    vice versa."""
     if diag is None:
         ax.text(0.5, 0.5, "results/graph_diagnostics.json not found", ha="center")
+        return
+    if tag_prefix:
+        diag = [g for g in diag if g["tag"].startswith(tag_prefix)]
+    if not diag:
+        ax.text(0.5, 0.5, f"no graph_diagnostics.json entries for "
+                           f"tag prefix '{tag_prefix}'", ha="center")
         return
     n_graphs = len(diag)
     total_seg = sum(g["n_segments"] for g in diag)
@@ -80,7 +105,7 @@ def panel_topology(ax, diag):
     vals = [total_isolated, total_seg - total_isolated]
     ax.pie(vals, labels=labels, autopct="%1.0f%%", colors=["#d62728", "#2ca02c"])
     ax.set_title(
-        f"B. Node connectivity across all {n_graphs} simulated graphs\n"
+        f"B. Node connectivity across {n_graphs} {tag_prefix or 'all'} graphs\n"
         f"{total_edges} real edges total | {edgeless}/{n_graphs} graphs "
         f"({edgeless/n_graphs:.0%}) have zero edges"
     )
@@ -160,6 +185,12 @@ def main():
                      help="Output filename under results/.")
     ap.add_argument("--title-suffix", default="",
                      help="e.g. '(simulated)' or '(Wick, real data)'.")
+    ap.add_argument("--tag-prefix", default=None,
+                     help="NEW: filter graph_diagnostics.json (panel B) and "
+                          "skip the baseline comparison (panel A) for "
+                          "anything that isn't simulated data, e.g. 'wick' "
+                          "or 'sim'. Omit for the simulated report (default "
+                          "behavior unchanged).")
     args = ap.parse_args()
 
     baselines = load("baselines.json")
@@ -167,8 +198,8 @@ def main():
     gnn = load(args.gnn_results)
 
     fig, axes = plt.subplots(2, 2, figsize=(13, 10))
-    panel_baselines(axes[0, 0], baselines, gnn)
-    panel_topology(axes[0, 1], diag)
+    panel_baselines(axes[0, 0], baselines, gnn, args.tag_prefix)
+    panel_topology(axes[0, 1], diag, args.tag_prefix)
     panel_node_head(axes[1, 0], gnn)
     panel_graph_head(axes[1, 1], gnn)
     suffix = f" {args.title_suffix}" if args.title_suffix else ""
