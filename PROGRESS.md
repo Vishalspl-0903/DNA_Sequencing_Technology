@@ -1045,6 +1045,124 @@ absorbed is still up (47 vs 40) because there are twice as many cointegrates.
 If the rate matters more than the count, cointegrate the *smallest* medium
 slots rather than any medium slot.
 
+## 18. GraphSAGE trained, and real Wick validation run **[DONE, 2026-09-22]**
+
+§13's "still pending" items are done: B3/B4 (GraphSAGE, 13_train_gnn.py) has
+been trained and evaluated, on both the v3 simulated cohort and — for the
+first time — a real assembled cohort (Wick et al. 2021, *not* the 2017
+multiplex paper; see correction below).
+
+### Bugs found and fixed getting here (not present before this session)
+
+- `13_train_gnn.py` as drafted assumed `data.plasmid_units` (list of dicts).
+  The real export (`05b_export_pyg.py`) stores parallel lists instead
+  (`plasmid_names`/`support`/`y_plasmid`), and drops the 4-way label and
+  true plasmid length entirely. Fixed: `05b_export_pyg.py` now also exports
+  `plasmid_label4`/`plasmid_len`; `build_examples()` rewritten to match.
+- `torch.load()` needed `weights_only=False` for current torch (>=2.6
+  defaults to `True`, refuses to unpickle this dataset).
+- No eval-only/checkpoint-loading mode existed — every run trained fresh,
+  so "test the simulated model on real data" was not actually possible.
+  Added `--eval_only`/`--load_model`. `--save_model` previously defaulted
+  to `results/gnn_model.pt` unconditionally, including after a plain CV
+  run — silently overwriting any existing checkpoint. Now opt-in only.
+- `04_label.py`'s isolate/reference lookup (`iso = tag.split("_")[0]`,
+  then `sim/<iso>_ref.fasta`) is correct for sim tags but silently wrong
+  for Wick tags (`wick_<Genus>_<species>_...`.split("_")[0]` is just
+  `"wick"`) — every Wick isolate skipped with no error. Fixed with a
+  `wick_`-prefix branch to `Dataset/assemblies/<isolate>.fasta`.
+- `05b_export_pyg.py`'s `d.isolate = tag.split("_")[0]` has the identical
+  bug **for CV grouping**: collapsed all 7 Wick isolates into one group
+  (`n_isolates: 1`), so the first Wick CV run trained on **zero** examples
+  and evaluated an untrained, randomly-initialized model (pooled PR-AUC
+  0.207 — noise, not a real result). Fixed; `n_isolates: 7` confirmed
+  after the fix, re-run below is the valid one.
+- `05_features.py`/`04_label.py` (`ROOT = r"D:\Plasmid-GNN\..."`) hardcoded
+  a Windows dev path that doesn't exist off that machine and doesn't match
+  this repo's actual layout — fixed to derive from the script's own
+  location (portable to macOS/Linux/Windows/Codespaces alike).
+- `05_features.py` overwrote `results/node_features.csv` and
+  `graph_diagnostics.json` wholesale with only whatever tags exist in the
+  **local** `asm/` — on a clone missing the 200 simulated `asm/` folders
+  (e.g. a Mac checkout that only ever ran Wick locally), this silently
+  replaced the 200-entry simulated file with a 7-entry Wick-only one,
+  which then got committed. Fixed to merge by tag instead of overwrite;
+  the lost simulated entries were restored via `git pull` + one full re-run
+  post-fix.
+
+### Real dataset correction
+
+Initially chased Wick et al. 2017 (12-isolate multiplex MinION paper) based
+on `assemblies.tar.gz`'s "Wick reference assemblies" description alone.
+Wrong paper — that one always has 12 isolates, never 7. The actual source,
+confirmed against `assemblies.tar.gz`'s own 7 isolate names and against
+this project's `sim`/`rap` tag convention:
+
+> Wick RR, Judd LM, Wyres KL, Holt KE. "Recovery of small plasmid sequences
+> via Oxford Nanopore sequencing." *Microbial Genomics* 2021.
+> DOI 10.1099/mgen.0.000631. Data: `github.com/rrwick/Small-plasmid-Nanopore`,
+> reads at `bridges.monash.edu/articles/dataset/Small_plasmid_Nanopore_data/13543754`.
+
+Used `tech_rep_1_rapid` only (4.6 GB of the ~40 GB across both reps and both
+prep methods). Demuxed by `barcode_arrangement` from the run's own
+`sequencing_summary.txt.gz` (verified against the paper's `method.md`, not
+assumed), subsampled to ~50x with `rasusa` per isolate's real genome size
+(3 of 7 isolates had raw coverage below 50x — `Acinetobacter_baumannii_J9`
+24x, `Enterobacter_kobei_MSB1_1B` 29x, `Klebsiella_oxytoca_MSB1_2C` 11x —
+assembled at whatever coverage was available, not padded), assembled with
+Flye `--nano-raw` (R9-era chemistry).
+
+**Not yet done:** only the rapid-prep replicate. The project's own
+hypothesis (ligation vs. rapid recovery differences) has not been tested on
+real data — `tech_rep_1_ligation`/`tech_rep_2_*` remain future work, blocked
+on nothing except disk/time.
+
+### Results
+
+Two evaluations against the real 7-isolate Wick cohort, both leave-isolate-
+out where applicable:
+
+| metric | Simulated (in-domain, n=50) | B: sim-trained model → Wick, no retrain (n=7) | C: trained from scratch on Wick, LOO-CV (n=7) |
+|---|---|---|---|
+| node head, `fragmented` PR-AUC (baseline) | 0.682 (0.032) | **0.553** (0.077) | 0.063 (0.077) |
+| node head, `recovered` PR-AUC (baseline) | 0.984 (0.880) | **0.969** (0.923) | 0.821 (0.923) |
+| graph head MAE (baseline = predict mean) | 0.528 (0.593) | **0.853** (1.020) | 1.527 (1.020) |
+| pooled head PR-AUC, 95% CI (descriptive, not confirmatory) | 0.960 [0.922, 0.987] | 0.795 [0.437, 1.0] | 0.735 [0.083, 0.972] |
+
+**B beats its own baseline on every confirmatory metric. C does not beat its
+baseline on any of them.** Consistent direction across both the node head
+and the independently-computed graph head, not one noisy number. Reading:
+a model pretrained on 200 cheap simulated graphs, never shown a single real
+Wick isolate, generalizes to real assembled graphs better than a model
+trained from nothing on the only 6 real isolates available per CV fold —
+expected given n=6 is nowhere near enough to learn a GNN from scratch, and
+a genuine, useful finding rather than a foregone conclusion (it could have
+gone the other way).
+
+**Topology, worth noting:** real Wick graphs are far more connected than
+the simulated cohort — 180 edges across 72 nodes (7 isolates) vs. 79 edges
+across 864 nodes (200 simulated graphs). Real assemblies do have the
+branchier structure GraphSAGE needs; the simulated cohort's topology
+limit (§13 flag, 86% isolated nodes) is a property of the simulator, not
+of real biology.
+
+**Caveats, stated not hidden, per this file's own n=12/v1 precedent:** n=7
+→ wide bootstrap CIs on the pooled head (up to [0.08, 0.97] for C). `absorbed`
+had zero real examples across all 7 isolates in this sample — PR-AUC
+correctly reported as `null`, not estimated. One technical replicate only.
+
+### Open item B (PROPOSAL_FIXES.md §1) — status: closed with evidence
+
+Real data now supports what was previously an argument from first
+principles: the pooled head's high simulated-data score (0.960) is
+descriptive, not confirmatory, exactly as flagged — the confirmatory node
+and graph heads tell a different, more modest, more honest story on both
+simulated and real data alike.
+
+Artifacts: `results/gnn_results_simulated.json`, `gnn_results_wick_from_sim_model.json`,
+`gnn_results_wick_cv.json`, `results/report_three_way.png` (comparison figure).
+
+
 ---
 
 ## Appendix: file map

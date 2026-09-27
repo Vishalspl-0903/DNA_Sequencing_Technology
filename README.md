@@ -42,6 +42,11 @@ is obtainable separately:
 
 ## Status and open items
 
+- **Real Wick validation is done** (PROGRESS.md §18): GraphSAGE trained on
+  the simulated cohort, evaluated against 7 real assembled isolates
+  (Wick et al. 2021, `tech_rep_1_rapid`). Sim-pretrained model beats a
+  from-scratch-on-Wick model on every confirmatory metric — see
+  `results/report_three_way.png`.
 - **`work/PROGRESS.md`** — current status: what is built, what was measured,
   what the numbers say, and the v2 cohort rebuild.
 - **`work/PROPOSAL_FIXES.md`** — open items. Two are live, one of them blocking.
